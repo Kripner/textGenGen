@@ -37,6 +37,7 @@
       </concept>
       <concept id="394857668357342104" name="jetbrains.mps.lang.plugin.structure.EverywhereActionPlace" flags="ng" index="mfpdH" />
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
+        <property id="1211298967294" name="outsideCommandExecution" index="72QZ$" />
         <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <property id="1213273179528" name="description" index="1WHSii" />
@@ -1562,6 +1563,7 @@
     <property role="TrG5h" value="GenerateTextGenAction" />
     <property role="2uzpH1" value="Generate TextGen" />
     <property role="1WHSii" value="Generate TextGen from Editor" />
+    <property role="72QZ$" value="true" />
     <node concept="2XrIbr" id="4M83bTHb6H7" role="32lrUH">
       <property role="TrG5h" value="processEditor" />
       <node concept="3clFbS" id="4M83bTHb6H9" role="3clF47">

@@ -72,10 +72,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
-        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
-        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
-      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -91,9 +87,6 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -250,8 +243,8 @@
       <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
-      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
       <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518107" name="jetbrains.mps.baseLanguage.javadoc.structure.DocTypeParameterReference" flags="ng" index="zr_56" />
       <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
@@ -517,6 +510,19 @@
       <ref role="3uigEE" node="5uqoS$$Zm5o" resolve="Value" />
       <node concept="16syzq" id="5uqoS$_od4l" role="11_B2D">
         <ref role="16sUi3" node="5uqoS$$ZmsD" resolve="T" />
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="ISvmvnSr5g" role="lGtFl">
+      <node concept="TZ5HA" id="ISvmvnSr5h" role="TZ5H$">
+        <node concept="1dT_AC" id="ISvmvnSr5i" role="1dT_Ay">
+          <property role="1dT_AB" value="Represents a constant value of a property in the css-like style language." />
+        </node>
+      </node>
+      <node concept="TUZQ0" id="ISvmvnSr5j" role="3nqlJM">
+        <property role="TUZQ4" value="Type of the value" />
+        <node concept="zr_56" id="ISvmvnSr5l" role="zr_5Q">
+          <ref role="zr_51" node="5uqoS$$ZmsD" resolve="T" />
+        </node>
       </node>
     </node>
   </node>
@@ -817,6 +823,24 @@
         <ref role="16sUi3" node="5uqoS$$Zmsm" resolve="T" />
       </node>
     </node>
+    <node concept="3UR2Jj" id="ISvmvnSqla" role="lGtFl">
+      <node concept="TZ5HA" id="ISvmvnSqlb" role="TZ5H$">
+        <node concept="1dT_AC" id="ISvmvnSqlc" role="1dT_Ay">
+          <property role="1dT_AB" value="Represents a query given as a value of a property in the css-like style language. Provides method for converting this" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="ISvmvnSqYd" role="TZ5H$">
+        <node concept="1dT_AC" id="ISvmvnSqYe" role="1dT_Ay">
+          <property role="1dT_AB" value="query into a statement list that can be inserted into textGen (remapping references to the node argument)" />
+        </node>
+      </node>
+      <node concept="TUZQ0" id="ISvmvnSqld" role="3nqlJM">
+        <property role="TUZQ4" value="Type of the value" />
+        <node concept="zr_56" id="ISvmvnSqlf" role="zr_5Q">
+          <ref role="zr_51" node="5uqoS$$Zmsm" resolve="T" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="3HP615" id="5uqoS$$Zm5o">
     <property role="TrG5h" value="Value" />
@@ -824,6 +848,19 @@
     <node concept="3Tm1VV" id="5uqoS$$Zm5p" role="1B3o_S" />
     <node concept="16euLQ" id="5uqoS$$Zms5" role="16eVyc">
       <property role="TrG5h" value="T" />
+    </node>
+    <node concept="3UR2Jj" id="ISvmvnSpJB" role="lGtFl">
+      <node concept="TZ5HA" id="ISvmvnSpJC" role="TZ5H$">
+        <node concept="1dT_AC" id="ISvmvnSpJD" role="1dT_Ay">
+          <property role="1dT_AB" value="Represents a value of a property in the css-like style language." />
+        </node>
+      </node>
+      <node concept="TUZQ0" id="ISvmvnSpJE" role="3nqlJM">
+        <property role="TUZQ4" value="Type of the value" />
+        <node concept="zr_56" id="ISvmvnSpJG" role="zr_5Q">
+          <ref role="zr_51" node="5uqoS$$Zms5" resolve="T" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="5uqoS$$irfk">
@@ -873,43 +910,26 @@
           <node concept="3clFbS" id="5uqoS$$iCCX" role="3clFbx">
             <node concept="3cpWs6" id="5uqoS$$iD6B" role="3cqZAp">
               <node concept="3nyPlj" id="5uqoS$$iD6D" role="3cqZAk">
-                <ref role="37wK5l" node="2G_6976chTV" resolve="get" />
-                <node concept="37vLTw" id="4gbnfRFzGIx" role="37wK5m">
-                  <ref role="3cqZAo" node="5uqoS$$i_eh" resolve="INDENT_LAYOUT_NEW_LINE_CHILDREN" />
+                <ref role="37wK5l" node="3$WA3A2ksWd" resolve="get" />
+                <node concept="Rm8GO" id="ISvmvnSxIx" role="37wK5m">
+                  <ref role="Rm8GQ" node="3$WA3A2jY$0" resolve="INDENT_LAYOUT_NEW_LINE_CHILDREN" />
+                  <ref role="1Px2BO" node="3$WA3A2jS3t" resolve="StyleItem" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="17R0WA" id="5uqoS$$iCXL" role="3clFbw">
-            <node concept="37vLTw" id="4gbnfRFzGID" role="3uHU7w">
-              <ref role="3cqZAo" node="2G_6976cHmn" resolve="INDENT_LAYOUT_NEW_LINE" />
+            <node concept="2OqwBi" id="ISvmvnSwH4" role="3uHU7w">
+              <node concept="Rm8GO" id="ISvmvnSwbp" role="2Oq$k0">
+                <ref role="Rm8GQ" node="3$WA3A2jSoM" resolve="INDENT_LAYOUT_NEW_LINE" />
+                <ref role="1Px2BO" node="3$WA3A2jS3t" resolve="StyleItem" />
+              </node>
+              <node concept="liA8E" id="ISvmvnSxu9" role="2OqNvi">
+                <ref role="37wK5l" node="3$WA3A2k0a3" resolve="getAlias" />
+              </node>
             </node>
             <node concept="37vLTw" id="5uqoS$$iCE8" role="3uHU7B">
               <ref role="3cqZAo" node="5uqoS$$iy62" resolve="itemAlias" />
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="5uqoS$__7rg" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbJ" id="5uqoS$_$uoU" role="8Wnug">
-            <node concept="3clFbS" id="5uqoS$_$uoV" role="3clFbx">
-              <node concept="3cpWs6" id="5uqoS$_$uoW" role="3cqZAp">
-                <node concept="3nyPlj" id="5uqoS$_$uoX" role="3cqZAk">
-                  <ref role="37wK5l" node="2G_6976chTV" resolve="get" />
-                  <node concept="37vLTw" id="4gbnfRFzGIL" role="37wK5m">
-                    <ref role="3cqZAo" node="5uqoS$_$s_i" resolve="INDENT_LAYOUT_INDENT" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="17R0WA" id="5uqoS$_$uoZ" role="3clFbw">
-              <node concept="37vLTw" id="4gbnfRFzGIT" role="3uHU7w">
-                <ref role="3cqZAo" node="5uqoS$_$s_i" resolve="INDENT_LAYOUT_INDENT" />
-              </node>
-              <node concept="37vLTw" id="5uqoS$_$up1" role="3uHU7B">
-                <ref role="3cqZAo" node="5uqoS$$iy62" resolve="itemAlias" />
-              </node>
             </node>
           </node>
         </node>
@@ -985,6 +1005,30 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3$WA3A2k3Tx" role="1B3o_S" />
+      <node concept="P$JXv" id="ISvmvnRU_g" role="lGtFl">
+        <node concept="TZ5HA" id="ISvmvnRU_h" role="TZ5H$">
+          <node concept="1dT_AC" id="ISvmvnRU_i" role="1dT_Ay">
+            <property role="1dT_AB" value="Reads the structure of the provided editor cell model and transcripts it to the provided textGenGenerator through" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="ISvmvnRVtZ" role="TZ5H$">
+          <node concept="1dT_AC" id="ISvmvnRVu0" role="1dT_Ay">
+            <property role="1dT_AB" value="its methods." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="ISvmvnRUJT" role="3nqlJM">
+          <property role="TUZQ4" value="Cell model of the editor to be transcripted" />
+          <node concept="zr_55" id="ISvmvnRUKc" role="zr_5Q">
+            <ref role="zr_51" node="3$WA3A2k3Tr" resolve="editorNode" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="ISvmvnRVvy" role="3nqlJM">
+          <property role="TUZQ4" value="Generator representing the resulting textGen node" />
+          <node concept="zr_55" id="ISvmvnRVvV" role="zr_5Q">
+            <ref role="zr_51" node="3$WA3A2k3Tt" resolve="textGenGenerator" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="3$WA3A2k3MA" role="jymVt" />
     <node concept="2YIFZL" id="2G_69760mcc" role="jymVt">
@@ -1266,7 +1310,7 @@
           <ref role="3uigEE" node="2G_6976bDNN" resolve="NodeStyleWrapper" />
         </node>
       </node>
-      <node concept="3Tm1VV" id="2G_69760mcC" role="1B3o_S" />
+      <node concept="3Tm6S6" id="ISvmvnRTVv" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="2G_69764D60" role="jymVt" />
     <node concept="2YIFZL" id="2G_69764Dbk" role="jymVt">
@@ -1348,7 +1392,11 @@
               </node>
             </node>
             <node concept="3clFbH" id="3$WA3A2kXGY" role="3cqZAp" />
-            <node concept="3clFbH" id="3$WA3A2kHax" role="3cqZAp" />
+            <node concept="3SKdUt" id="3$WA3A2qDQc" role="3cqZAp">
+              <node concept="3SKdUq" id="3$WA3A2qDQe" role="3SKWNk">
+                <property role="3SKdUp" value="TODO: support queries, don't append space after newline" />
+              </node>
+            </node>
             <node concept="3clFbJ" id="3$WA3A2kieh" role="3cqZAp">
               <node concept="3clFbS" id="3$WA3A2kiej" role="3clFbx">
                 <node concept="3clFbF" id="3$WA3A2kjrb" role="3cqZAp">
@@ -1667,6 +1715,13 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="4M83bTHkcdw" role="1B3o_S" />
+    <node concept="3UR2Jj" id="ISvmvnRNp2" role="lGtFl">
+      <node concept="TZ5HA" id="ISvmvnRNp3" role="TZ5H$">
+        <node concept="1dT_AC" id="ISvmvnRNp4" role="1dT_Ay">
+          <property role="1dT_AB" value="Entry point to the core. Manages the whole conversion of an individual editor node to the corresponding textGen node." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="2G_69765rSN">
     <property role="TrG5h" value="NameProvider" />
@@ -1800,63 +1855,17 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="2G_69765rSO" role="1B3o_S" />
+    <node concept="3UR2Jj" id="ISvmvnRWQG" role="lGtFl">
+      <node concept="TZ5HA" id="ISvmvnRWQH" role="TZ5H$">
+        <node concept="1dT_AC" id="ISvmvnRWQI" role="1dT_Ay">
+          <property role="1dT_AB" value="Provides unique names for given context" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="2G_6976bDNN">
     <property role="TrG5h" value="NodeStyleWrapper" />
     <property role="3GE5qa" value="style" />
-    <node concept="2tJIrI" id="3$WA3A2phmX" role="jymVt" />
-    <node concept="Wx3nA" id="2G_6976cHmn" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="INDENT_LAYOUT_NEW_LINE" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2G_6976cGR4" role="1B3o_S" />
-      <node concept="17QB3L" id="2G_6976cH6T" role="1tU5fm" />
-      <node concept="Xl_RD" id="2G_6976cHPK" role="33vP2m">
-        <property role="Xl_RC" value="indent-layout-new-line" />
-      </node>
-      <node concept="z59LJ" id="3$WA3A2phXW" role="lGtFl">
-        <node concept="TZ5HA" id="3$WA3A2phXX" role="TZ5H$">
-          <node concept="1dT_AC" id="3$WA3A2phXY" role="1dT_Ay">
-            <property role="1dT_AB" value="TODO: remove these" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="Wx3nA" id="2G_6976cXBW" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="INDENT_LAYOUT_ON_NEW_LINE" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="2G_6976cXBX" role="1B3o_S" />
-      <node concept="17QB3L" id="2G_6976cXBY" role="1tU5fm" />
-      <node concept="Xl_RD" id="2G_6976cXBZ" role="33vP2m">
-        <property role="Xl_RC" value="indent-layout-on-new-line" />
-      </node>
-    </node>
-    <node concept="Wx3nA" id="5uqoS$$i_eh" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="INDENT_LAYOUT_NEW_LINE_CHILDREN" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="5uqoS$$i_ei" role="1B3o_S" />
-      <node concept="17QB3L" id="5uqoS$$i_ej" role="1tU5fm" />
-      <node concept="Xl_RD" id="5uqoS$$i_ek" role="33vP2m">
-        <property role="Xl_RC" value="indent-layout-new-line-children" />
-      </node>
-    </node>
-    <node concept="Wx3nA" id="5uqoS$_$s_i" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="INDENT_LAYOUT_INDENT" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="5uqoS$_$s_j" role="1B3o_S" />
-      <node concept="17QB3L" id="5uqoS$_$s_k" role="1tU5fm" />
-      <node concept="Xl_RD" id="5uqoS$_$s_l" role="33vP2m">
-        <property role="Xl_RC" value="indent-layout-indent" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="2G_6976cGnN" role="jymVt" />
     <node concept="312cEg" id="2G_6976bImP" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -2386,6 +2395,18 @@
         <node concept="17QB3L" id="2G_6976cjt_" role="1tU5fm" />
       </node>
     </node>
+    <node concept="3UR2Jj" id="ISvmvnSAtR" role="lGtFl">
+      <node concept="TZ5HA" id="ISvmvnSAtS" role="TZ5H$">
+        <node concept="1dT_AC" id="ISvmvnSAtT" role="1dT_Ay">
+          <property role="1dT_AB" value="Encapsulates style of a node given by a a list of StyleClassItem instances. Provides convenient methods for manipulaing" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="ISvmvnSAVC" role="TZ5H$">
+        <node concept="1dT_AC" id="ISvmvnSAVD" role="1dT_Ay">
+          <property role="1dT_AB" value="with it." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5uqoS$$jdaG">
     <property role="TrG5h" value="StatementsBuffer" />
@@ -2681,6 +2702,13 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="5uqoS$$jdaH" role="1B3o_S" />
+    <node concept="3UR2Jj" id="ISvmvnRZdq" role="lGtFl">
+      <node concept="TZ5HA" id="ISvmvnRZdr" role="TZ5H$">
+        <node concept="1dT_AC" id="ISvmvnRZds" role="1dT_Ay">
+          <property role="1dT_AB" value="Collects statements and tries to optimize them (e.g. combine multiple constant appends into one)" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="5uqoS$$ZdwS">
     <property role="TrG5h" value="TextGenBuilder" />
@@ -4336,6 +4364,13 @@
         </node>
       </node>
     </node>
+    <node concept="3UR2Jj" id="ISvmvnS4oU" role="lGtFl">
+      <node concept="TZ5HA" id="ISvmvnS4oV" role="TZ5H$">
+        <node concept="1dT_AC" id="ISvmvnS4oW" role="1dT_Ay">
+          <property role="1dT_AB" value="Manages a statements list and provides convenient methods for adding new statements." />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="Pei6ieTWbW">
     <property role="TrG5h" value="TextGenGenerator" />
@@ -5049,10 +5084,10 @@
                     <ref role="3cqZAo" node="5uqoS$$tWoh" resolve="style" />
                   </node>
                   <node concept="liA8E" id="5uqoS$_64M0" role="2OqNvi">
-                    <ref role="37wK5l" node="2G_6976cjjr" resolve="getBool" />
-                    <node concept="10M0yZ" id="5uqoS$_6678" role="37wK5m">
-                      <ref role="1PxDUh" node="2G_6976bDNN" resolve="NodeStyleWrapper" />
-                      <ref role="3cqZAo" node="2G_6976cXBW" resolve="INDENT_LAYOUT_ON_NEW_LINE" />
+                    <ref role="37wK5l" node="3$WA3A2kLWX" resolve="getBool" />
+                    <node concept="Rm8GO" id="ISvmvnStEL" role="37wK5m">
+                      <ref role="Rm8GQ" node="3$WA3A2jSpt" resolve="INDENT_LAYOUT_ON_NEW_LINE" />
+                      <ref role="1Px2BO" node="3$WA3A2jS3t" resolve="StyleItem" />
                     </node>
                   </node>
                 </node>
@@ -5085,10 +5120,10 @@
                     <ref role="3cqZAo" node="5uqoS$$tWoh" resolve="style" />
                   </node>
                   <node concept="liA8E" id="5uqoS$_$qEU" role="2OqNvi">
-                    <ref role="37wK5l" node="2G_6976cjjr" resolve="getBool" />
-                    <node concept="10M0yZ" id="5uqoS$_$vzl" role="37wK5m">
-                      <ref role="3cqZAo" node="5uqoS$_$s_i" resolve="INDENT_LAYOUT_INDENT" />
-                      <ref role="1PxDUh" node="2G_6976bDNN" resolve="NodeStyleWrapper" />
+                    <ref role="37wK5l" node="3$WA3A2kLWX" resolve="getBool" />
+                    <node concept="Rm8GO" id="ISvmvnStWm" role="37wK5m">
+                      <ref role="Rm8GQ" node="3$WA3A2jZk9" resolve="INDENT_LAYOUT_INDENT" />
+                      <ref role="1Px2BO" node="3$WA3A2jS3t" resolve="StyleItem" />
                     </node>
                   </node>
                 </node>
@@ -5111,10 +5146,10 @@
                     <ref role="3cqZAo" node="5uqoS$$tWoh" resolve="style" />
                   </node>
                   <node concept="liA8E" id="5uqoS$_8WxY" role="2OqNvi">
-                    <ref role="37wK5l" node="2G_6976cjjr" resolve="getBool" />
-                    <node concept="10M0yZ" id="5uqoS$_8WxZ" role="37wK5m">
-                      <ref role="3cqZAo" node="2G_6976cHmn" resolve="INDENT_LAYOUT_NEW_LINE" />
-                      <ref role="1PxDUh" node="2G_6976bDNN" resolve="NodeStyleWrapper" />
+                    <ref role="37wK5l" node="3$WA3A2kLWX" resolve="getBool" />
+                    <node concept="Rm8GO" id="ISvmvnSunr" role="37wK5m">
+                      <ref role="Rm8GQ" node="3$WA3A2jSoM" resolve="INDENT_LAYOUT_NEW_LINE" />
+                      <ref role="1Px2BO" node="3$WA3A2jS3t" resolve="StyleItem" />
                     </node>
                   </node>
                 </node>
@@ -6605,20 +6640,10 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="Pei6ieTWbX" role="1B3o_S" />
-    <node concept="3UR2Jj" id="Pei6ieTWF6" role="lGtFl">
-      <node concept="TZ5HA" id="Pei6ieTWF7" role="TZ5H$">
-        <node concept="1dT_AC" id="Pei6ieTWF8" role="1dT_Ay">
-          <property role="1dT_AB" value="Helper class for generating TextGen aspects." />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="3aST2zGraQg" role="TZ5H$">
-        <node concept="1dT_AC" id="3aST2zGraQh" role="1dT_Ay">
-          <property role="1dT_AB" value="With each instance, one textgen is created and can be filled with statements." />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="3aST2zGraQC" role="TZ5H$">
-        <node concept="1dT_AC" id="3aST2zGraQD" role="1dT_Ay">
-          <property role="1dT_AB" value="After we are done with it, we call getTextGen() to retrieve it." />
+    <node concept="3UR2Jj" id="ISvmvnS936" role="lGtFl">
+      <node concept="TZ5HA" id="ISvmvnS937" role="TZ5H$">
+        <node concept="1dT_AC" id="ISvmvnS938" role="1dT_Ay">
+          <property role="1dT_AB" value="Provides methods for handling different editor cells (constants, properties, children, ...)." />
         </node>
       </node>
     </node>
