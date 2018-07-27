@@ -1,0 +1,30 @@
+# MPS
+workspace.xml
+
+classes_gen
+source_gen
+source_gen.caches
+
+test_gen
+test_gen.caches
+TEST-*.xml
+junit*.properties
+
+# IDEA
+java_src/EditorToText_IDEA/.idea/**/workspace.xml
+java_src/EditorToText_IDEA/.idea/**/tasks.xml
+java_src/EditorToText_IDEA/.idea/**/usage.statistics.xml
+java_src/EditorToText_IDEA/.idea/**/dictionaries
+java_src/EditorToText_IDEA/.idea/**/shelf
+
+java_src/EditorToText_IDEA/.idea/**/dataSources/
+java_src/EditorToText_IDEA/.idea/**/dataSources.ids
+java_src/EditorToText_IDEA/.idea/**/dataSources.local.xml
+java_src/EditorToText_IDEA/.idea/**/sqlDataSources.xml
+java_src/EditorToText_IDEA/.idea/**/dynamic.xml
+java_src/EditorToText_IDEA/.idea/**/uiDesigner.xml
+java_src/EditorToText_IDEA/.idea/**/dbnavigator.xml
+
+java_src/EditorToText_IDEA/out/
+
+*.iws
