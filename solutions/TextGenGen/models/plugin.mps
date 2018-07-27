@@ -226,6 +226,7 @@
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
@@ -1607,13 +1608,16 @@
               <node concept="2YIFZM" id="4gbnfRFzQXb" role="3clFbG">
                 <ref role="37wK5l" to="6pqh:2G_69760mcc" resolve="processEditor" />
                 <ref role="1Pybhc" to="6pqh:4M83bTHkcdv" resolve="EditorToTextGenConvertor" />
-                <node concept="2OqwBi" id="4gbnfRFzQXc" role="37wK5m">
-                  <node concept="37vLTw" id="4gbnfRFzQXd" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4M83bTHb808" resolve="editor" />
+                <node concept="2OqwBi" id="3$WA3A2g4kf" role="37wK5m">
+                  <node concept="2OqwBi" id="4gbnfRFzQXc" role="2Oq$k0">
+                    <node concept="37vLTw" id="4gbnfRFzQXd" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4M83bTHb808" resolve="editor" />
+                    </node>
+                    <node concept="3TrEf2" id="4gbnfRFzQXe" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpc2:fIwV5gl" resolve="cellModel" />
+                    </node>
                   </node>
-                  <node concept="3TrEf2" id="4gbnfRFzQXe" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tpc2:fIwV5gl" resolve="cellModel" />
-                  </node>
+                  <node concept="1$rogu" id="3$WA3A2g4C0" role="2OqNvi" />
                 </node>
                 <node concept="37vLTw" id="4gbnfRFzQXf" role="37wK5m">
                   <ref role="3cqZAo" node="4M83bTHcvqO" resolve="textGenGenerator" />
