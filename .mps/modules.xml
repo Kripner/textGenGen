@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/TextGenGen.build/TextGenGen.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TextGenGen/TextGenGen.msd" folder="" />
     </projectModules>
   </component>
