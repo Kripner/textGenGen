@@ -3,7 +3,8 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/TextGenGen" />
   <property name="build.layout" location="${build.dir}/artifacts/TextGenGen" />
-  <property name="mps_home" location="${basedir}/../Enter path to your MPS installation home" />
+  <property name="mps_home" location="${basedir}/../../../../../Program Files (x86)/JetBrains/MPS 2018.1" />
+  <property name="TEXTGENGEN_HOME" location="${basedir}" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -69,21 +70,21 @@
     </echoxml>
     <jar destfile="${build.tmp}/default/TextGenGen.zip/TextGenGen/languages/TextGenGen/TextGenGen.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/TextGenGen" />
-      <fileset dir="${basedir}/java_src/EditorToText_IDEA/src" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${basedir}/solutions/TextGenGen/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${TEXTGENGEN_HOME}/java_src/EditorToText_IDEA/src" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${TEXTGENGEN_HOME}/solutions/TextGenGen/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/TextGenGen.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-TextGenGen-models">
-      <fileset dir="${basedir}/solutions/TextGenGen/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+      <fileset dir="${TEXTGENGEN_HOME}/solutions/TextGenGen/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/TextGenGen.zip/TextGenGen/languages/TextGenGen/TextGenGen-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/java_src/EditorToText_IDEA/src">
+      <fileset dir="${TEXTGENGEN_HOME}/java_src/EditorToText_IDEA/src">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <fileset dir="${basedir}/solutions/TextGenGen/source_gen">
+      <fileset dir="${TEXTGENGEN_HOME}/solutions/TextGenGen/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
@@ -189,6 +190,7 @@
         <arg value="-Xmx512m" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
+      <macro name="TEXTGENGEN_HOME" path="${TEXTGENGEN_HOME}" />
     </generate>
   </target>
   
@@ -199,14 +201,14 @@
   <target name="makeDependents" />
   
   <target name="java.compile.TextGenGen" depends="fetchDependencies">
-    <mkdir dir="${basedir}/java_src/EditorToText_IDEA/src" />
-    <mkdir dir="${basedir}/solutions/TextGenGen/source_gen" />
+    <mkdir dir="${TEXTGENGEN_HOME}/java_src/EditorToText_IDEA/src" />
+    <mkdir dir="${TEXTGENGEN_HOME}/solutions/TextGenGen/source_gen" />
     <mkdir dir="${build.tmp}/java/out/TextGenGen" />
     <javac destdir="${build.tmp}/java/out/TextGenGen" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/java_src/EditorToText_IDEA/src" />
-        <path location="${basedir}/solutions/TextGenGen/source_gen" />
+        <path location="${TEXTGENGEN_HOME}/java_src/EditorToText_IDEA/src" />
+        <path location="${TEXTGENGEN_HOME}/solutions/TextGenGen/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -252,6 +254,6 @@
   </target>
   
   <target name="cleanSources">
-    <delete dir="${basedir}/solutions/TextGenGen/source_gen" />
+    <delete dir="${TEXTGENGEN_HOME}/solutions/TextGenGen/source_gen" />
   </target>
 </project>

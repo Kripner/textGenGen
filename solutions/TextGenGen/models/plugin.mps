@@ -1817,54 +1817,16 @@
           </node>
         </node>
         <node concept="3cpWs6" id="ISvmvnWDsR" role="3cqZAp">
-          <node concept="2OqwBi" id="ISvmvnWLk6" role="3cqZAk">
-            <node concept="2OqwBi" id="ISvmvnWIXQ" role="2Oq$k0">
-              <node concept="2OqwBi" id="ISvmvnWEQ9" role="2Oq$k0">
-                <node concept="37vLTw" id="ISvmvnWDPv" role="2Oq$k0">
-                  <ref role="3cqZAo" node="ISvmvnWyzH" resolve="models" />
-                </node>
-                <node concept="liA8E" id="ISvmvnWI4m" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~Collection.stream():java.util.stream.Stream" resolve="stream" />
-                </node>
+          <node concept="2OqwBi" id="1ZW8j_J2QP$" role="3cqZAk">
+            <node concept="2OqwBi" id="1ZW8j_J2OpW" role="2Oq$k0">
+              <node concept="37vLTw" id="1ZW8j_J2Nqb" role="2Oq$k0">
+                <ref role="3cqZAo" node="ISvmvnWyzH" resolve="models" />
               </node>
-              <node concept="liA8E" id="ISvmvnWKbW" role="2OqNvi">
-                <ref role="37wK5l" to="1ctc:~Stream.filter(java.util.function.Predicate):java.util.stream.Stream" resolve="filter" />
-                <node concept="1bVj0M" id="ISvmvnWKbX" role="37wK5m">
-                  <node concept="37vLTG" id="ISvmvnWKbY" role="1bW2Oz">
-                    <property role="TrG5h" value="model" />
-                    <node concept="3uibUv" id="ISvmvnWKbZ" role="1tU5fm">
-                      <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="ISvmvnWKc0" role="1bW5cS">
-                    <node concept="3clFbF" id="ISvmvnWKc1" role="3cqZAp">
-                      <node concept="2OqwBi" id="ISvmvnWKc2" role="3clFbG">
-                        <node concept="2OqwBi" id="ISvmvnWKc3" role="2Oq$k0">
-                          <node concept="2OqwBi" id="ISvmvnWKc4" role="2Oq$k0">
-                            <node concept="37vLTw" id="ISvmvnWKc5" role="2Oq$k0">
-                              <ref role="3cqZAo" node="ISvmvnWKbY" resolve="model" />
-                            </node>
-                            <node concept="liA8E" id="ISvmvnWKc6" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="ISvmvnWKc7" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModelName.getSimpleName():java.lang.String" resolve="getSimpleName" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="ISvmvnWKc8" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                          <node concept="37vLTw" id="ISvmvnWKc9" role="37wK5m">
-                            <ref role="3cqZAo" node="4M83bTHd3u5" resolve="modelName" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
+              <node concept="liA8E" id="1ZW8j_J2Q60" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Collection.stream():java.util.stream.Stream" resolve="stream" />
               </node>
             </node>
-            <node concept="liA8E" id="ISvmvnWOSV" role="2OqNvi">
+            <node concept="liA8E" id="1ZW8j_J2RZH" role="2OqNvi">
               <ref role="37wK5l" to="1ctc:~Stream.findAny():java.util.Optional" resolve="findAny" />
             </node>
           </node>
