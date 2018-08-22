@@ -13,7 +13,8 @@ TEST-*.xml
 junit*.properties
 
 # IDEA
-java_src/EditorToText_IDEA/.idea
+java_src/EditorToText_IDEA/.idea/*
+!java_src/EditorToText_IDEA/.idea/libraries/
 java_src/EditorToText_IDEA/out/
 
 *.iws
