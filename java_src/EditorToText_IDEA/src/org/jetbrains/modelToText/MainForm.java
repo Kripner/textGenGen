@@ -3,8 +3,6 @@ package org.jetbrains.modelToText;
 import javax.swing.*;
 import javax.swing.filechooser.FileSystemView;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.function.Consumer;
 
