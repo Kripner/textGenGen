@@ -1,44 +1,30 @@
 package org.jetbrains.editorToTextGen;
 
-import org.jetbrains.mps.openapi.module.SModule;
-
 import javax.swing.*;
-import java.util.List;
 
 /**
  * @author Matej Kripner <kripnermatej@gmail.com>; google.com/+MatejKripner
  */
 public class MainForm {
     private final JDialog frame = new JDialog();
-    private final List<SModule> modules;
+    private final String languageName;
 
-    public MainForm(List<SModule> modules) {
-        this.modules = modules;
+    public MainForm(String languageName) {
+        this.languageName = languageName;
     }
 
     public UserInput initAndDisplay() {
-        String[] modulesNames = modules.stream().map(SModule::getModuleName).toArray(String[]::new);
-
-        JComboBox<String> modulesComboBox = new JComboBox<>(modulesNames);
         JTextField extensionField = new JTextField("", 5);
 
         JPanel mainPanel = new JPanel();
-        mainPanel.add(new JLabel("Choose a module"));
-        mainPanel.add(modulesComboBox);
-        mainPanel.add(Box.createHorizontalStrut(15)); // a spacer
-        mainPanel.add(new JLabel("Extension: "));
+        mainPanel.add(new JLabel("Extension (will be used in the textGen): "));
         mainPanel.add(extensionField);
 
-        int result = JOptionPane.showConfirmDialog(null, mainPanel,
-                "Generate textGen from editor", JOptionPane.OK_CANCEL_OPTION);
+        int result = JOptionPane.showConfirmDialog(frame, mainPanel,
+                "Generate textGen from editor in the model \"" + languageName + "\"",
+                JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
         if (result == JOptionPane.OK_OPTION) {
-            String chosenModuleName = (String) modulesComboBox.getSelectedItem();
-            String extension = extensionField.getText();
-            SModule chosenModule = modules.stream()
-                    .filter(sModule -> sModule.getModuleName().equals(chosenModuleName))
-                    .findFirst()
-                    .orElseThrow(() -> new IllegalStateException("Impossible exception"));
-            return new UserInput(chosenModule, checkExtension(extension));
+            return new UserInput(checkExtension(extensionField.getText()));
         }
         return null;
     }
