@@ -4,11 +4,29 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
   </imports>
   <registry>
+    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
+        <property id="6666499814681541920" name="text" index="2pMdty" />
+      </concept>
+      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
+        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <child id="6666499814681415861" name="attributes" index="2pNNFR" />
+        <child id="1622293396948928802" name="content" index="3o6s8t" />
+      </concept>
+      <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
+        <property id="6666499814681447926" name="attrName" index="2pNUuO" />
+        <child id="6666499814681541918" name="value" index="2pMdts" />
+      </concept>
+      <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG">
+        <property id="1622293396948953704" name="value" index="3o6i5n" />
+      </concept>
+    </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
@@ -64,6 +82,7 @@
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
+        <child id="1359186315025500371" name="xml" index="20twgj" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
@@ -140,6 +159,33 @@
     </node>
     <node concept="m$_wf" id="5n$w_eSjdem" role="3989C9">
       <property role="m$_wk" value="TextGenGen" />
+      <node concept="2pNNFK" id="6gVRE4aUqX5" role="20twgj">
+        <property role="2pNNFO" value="description" />
+        <node concept="3o6iSG" id="6gVRE4aUqY1" role="3o6s8t">
+          <property role="3o6i5n" value="Editor to text/tegtgen convertor" />
+        </node>
+      </node>
+      <node concept="2pNNFK" id="6gVRE4aUuEJ" role="20twgj">
+        <property role="2pNNFO" value="vendor" />
+        <node concept="3o6iSG" id="6gVRE4aUuFD" role="3o6s8t">
+          <property role="3o6i5n" value="JetBrains" />
+        </node>
+      </node>
+      <node concept="2pNNFK" id="6gVRE4aUuGf" role="20twgj">
+        <property role="2pNNFO" value="idea-version" />
+        <node concept="2pNUuL" id="6gVRE4aUuI3" role="2pNNFR">
+          <property role="2pNUuO" value="since-build" />
+          <node concept="2pMdtt" id="6gVRE4aUuI4" role="2pMdts">
+            <property role="2pMdty" value="181.1" />
+          </node>
+        </node>
+        <node concept="2pNUuL" id="6gVRE4aUuJh" role="2pNNFR">
+          <property role="2pNUuO" value="until-build" />
+          <node concept="2pMdtt" id="6gVRE4aUuJi" role="2pMdts">
+            <property role="2pMdty" value="183.*" />
+          </node>
+        </node>
+      </node>
       <node concept="3_J27D" id="5n$w_eSjden" role="m$_yQ">
         <node concept="3Mxwew" id="5n$w_eSjdeo" role="3MwsjC">
           <property role="3MwjfP" value="TextGenGen" />
@@ -147,7 +193,7 @@
       </node>
       <node concept="3_J27D" id="5n$w_eSjdep" role="m$_w8">
         <node concept="3Mxwew" id="5n$w_eSjdeq" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+          <property role="3MwjfP" value="0.1" />
         </node>
       </node>
       <node concept="m$f5U" id="5n$w_eSjder" role="m$_yh">
