@@ -34,25 +34,4 @@ public class MainForm {
             return extension.substring(1);
         return extension;
     }
-
-//    public void initAndDisplay() {
-//        frame.setTitle("Generate textGen from editor");
-//        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-////        frame.setSize(600, 300);
-//        frame.setModal(true);
-//
-//        JPanel mainPanel = new JPanel();
-//        mainPanel.setLayout(new FlowLayout(FlowLayout.LEADING));
-//
-//        frame.setContentPane(mainPanel);
-//        frame.pack();
-//        frame.setVisible(true);
-//        JOptionPane.OPTION
-//    }
-
-//    private JPanel buildGrid() {
-//        JPanel grid = new JPanel();
-//        grid.setLayout(new GridLayout(2, 2));
-//
-//    }
 }

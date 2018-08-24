@@ -2398,12 +2398,7 @@
     <node concept="3UR2Jj" id="ISvmvnSAtR" role="lGtFl">
       <node concept="TZ5HA" id="ISvmvnSAtS" role="TZ5H$">
         <node concept="1dT_AC" id="ISvmvnSAtT" role="1dT_Ay">
-          <property role="1dT_AB" value="Encapsulates style of a node given by a a list of StyleClassItem instances. Provides convenient methods for manipulaing" />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="ISvmvnSAVC" role="TZ5H$">
-        <node concept="1dT_AC" id="ISvmvnSAVD" role="1dT_Ay">
-          <property role="1dT_AB" value="with it." />
+          <property role="1dT_AB" value="Encapsulates style of a node given by a list of StyleClassItem instances. Provides convenient methods for manipulaing it." />
         </node>
       </node>
     </node>
