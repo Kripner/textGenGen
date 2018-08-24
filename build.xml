@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/TextGenGen" />
   <property name="build.layout" location="${build.dir}/artifacts/TextGenGen" />
-  <property name="mps_home" location="${basedir}/../Enter path to your MPS installation home" />
+  <property name="mps_home" location="" />
   <property name="TEXTGENGEN_HOME" location="${basedir}" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
