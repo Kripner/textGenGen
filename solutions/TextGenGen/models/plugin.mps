@@ -2,13 +2,13 @@
 <model ref="r:18174dbd-0754-447b-a8db-d3eb6899efb7(TextGenGen.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -345,7 +345,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -364,9 +364,6 @@
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
       </concept>
       <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
-      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
-        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
-      </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="4611582986551314327" name="jetbrains.mps.baseLanguage.collections.structure.OfTypeOperation" flags="nn" index="UnYns">
         <child id="4611582986551314344" name="requestedType" index="UnYnz" />
@@ -2375,33 +2372,7 @@
             <node concept="2GrKxI" id="75$k3hpG3ZL" role="2Gsz3X">
               <property role="TrG5h" value="module" />
             </node>
-            <node concept="3clFbS" id="75$k3hpG3ZM" role="2LFqv$">
-              <node concept="3clFbJ" id="75$k3hpG3ZN" role="3cqZAp">
-                <node concept="3clFbS" id="75$k3hpG3ZO" role="3clFbx">
-                  <node concept="3cpWs6" id="75$k3hpG3ZP" role="3cqZAp">
-                    <node concept="2GrUjf" id="75$k3hpG3ZQ" role="3cqZAk">
-                      <ref role="2Gs0qQ" node="75$k3hpG3ZL" resolve="module" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="75$k3hpG3ZR" role="3clFbw">
-                  <node concept="liA8E" id="75$k3hpG3ZS" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                    <node concept="37vLTw" id="75$k3hpG3ZT" role="37wK5m">
-                      <ref role="3cqZAo" to=":^" resolve="name" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="75$k3hpG3ZU" role="2Oq$k0">
-                    <node concept="2GrUjf" id="75$k3hpG3ZV" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="75$k3hpG3ZL" resolve="module" />
-                    </node>
-                    <node concept="liA8E" id="75$k3hpG3ZW" role="2OqNvi">
-                      <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
+            <node concept="3clFbS" id="75$k3hpG3ZM" role="2LFqv$" />
             <node concept="2OqwBi" id="75$k3hpG3ZX" role="2GsD0m">
               <node concept="37vLTw" id="75$k3hpG3ZY" role="2Oq$k0">
                 <ref role="3cqZAo" node="75$k3hpG3ZB" resolve="modules" />
