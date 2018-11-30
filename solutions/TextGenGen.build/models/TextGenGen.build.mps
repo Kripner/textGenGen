@@ -351,7 +351,7 @@
         <node concept="2pNUuL" id="6gVRE4aUuJh" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
           <node concept="2pMdtt" id="6gVRE4aUuJi" role="2pMdts">
-            <property role="2pMdty" value="191.*" />
+            <property role="2pMdty" value="191.1" />
           </node>
         </node>
       </node>
@@ -362,7 +362,7 @@
       </node>
       <node concept="3_J27D" id="5n$w_eSjdep" role="m$_w8">
         <node concept="3Mxwew" id="5n$w_eSjdeq" role="3MwsjC">
-          <property role="3MwjfP" value="0.2" />
+          <property role="3MwjfP" value="0.3" />
         </node>
       </node>
       <node concept="m$f5U" id="5n$w_eSjder" role="m$_yh">
