@@ -8,7 +8,9 @@
       <sourceRoot location="." />
     </modelRoot>
   </models>
-  <sourcePath />
+  <sourcePath>
+    <source path="/Users/vaclav/work/mps_projects/aca/textGenGen/java_src/EditorToText_IDEA/src" />
+  </sourcePath>
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
