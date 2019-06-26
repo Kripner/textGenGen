@@ -1684,6 +1684,68 @@
             <node concept="2jxLKc" id="2G_69765d5v" role="1tU5fm" />
           </node>
         </node>
+        <node concept="Jncv_" id="1JaOyno1pui" role="3cqZAp">
+          <ref role="JncvD" to="tpc2:fGPMmym" resolve="CellModel_Component" />
+          <node concept="37vLTw" id="1JaOyno1pTY" role="JncvB">
+            <ref role="3cqZAo" node="2G_69760mcE" resolve="editorNode" />
+          </node>
+          <node concept="3clFbS" id="1JaOyno1pum" role="Jncv$">
+            <node concept="3clFbF" id="1JaOyno4s1Q" role="3cqZAp">
+              <node concept="2OqwBi" id="1JaOyno4sbg" role="3clFbG">
+                <node concept="37vLTw" id="1JaOyno4s1O" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2G_69760mcG" resolve="textGenGenerator" />
+                </node>
+                <node concept="liA8E" id="1JaOyno4siO" role="2OqNvi">
+                  <ref role="37wK5l" node="1JaOyno3d_2" resolve="appendComment" />
+                  <node concept="Xl_RD" id="1JaOyno4slz" role="37wK5m">
+                    <property role="Xl_RC" value="Editor component follows &gt;&gt;&gt;" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1JaOyno1za3" role="3cqZAp">
+              <node concept="1rXfSq" id="1JaOyno1za1" role="3clFbG">
+                <ref role="37wK5l" node="2G_69760mcc" resolve="processEditor" />
+                <node concept="2OqwBi" id="1JaOyno1zdL" role="37wK5m">
+                  <node concept="2OqwBi" id="1JaOyno1zdM" role="2Oq$k0">
+                    <node concept="Jnkvi" id="1JaOyno1zdN" role="2Oq$k0">
+                      <ref role="1M0zk5" node="1JaOyno1puo" resolve="component" />
+                    </node>
+                    <node concept="3TrEf2" id="1JaOyno1zdO" role="2OqNvi">
+                      <ref role="3Tt5mk" to="tpc2:fGPMmyn" resolve="editorComponent" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="1JaOyno1zdP" role="2OqNvi">
+                    <ref role="3Tt5mk" to="tpc2:fIwV5gl" resolve="cellModel" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="1JaOyno1zGi" role="37wK5m">
+                  <ref role="3cqZAo" node="2G_69760mcG" resolve="textGenGenerator" />
+                </node>
+                <node concept="37vLTw" id="1JaOyno1zMm" role="37wK5m">
+                  <ref role="3cqZAo" node="3$WA3A2k2Nn" resolve="nodeStyle" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1JaOyno4ssI" role="3cqZAp">
+              <node concept="2OqwBi" id="1JaOyno4ssJ" role="3clFbG">
+                <node concept="37vLTw" id="1JaOyno4ssK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2G_69760mcG" resolve="textGenGenerator" />
+                </node>
+                <node concept="liA8E" id="1JaOyno4ssL" role="2OqNvi">
+                  <ref role="37wK5l" node="1JaOyno3d_2" resolve="appendComment" />
+                  <node concept="Xl_RD" id="1JaOyno4ssM" role="37wK5m">
+                    <property role="Xl_RC" value="&lt;&lt;&lt; Editor component ends" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="1JaOyno1puo" role="JncvA">
+            <property role="TrG5h" value="component" />
+            <node concept="2jxLKc" id="1JaOyno1pup" role="1tU5fm" />
+          </node>
+        </node>
         <node concept="3clFbH" id="5RdIVoLqwTg" role="3cqZAp" />
         <node concept="3clFbJ" id="5RdIVoLqyom" role="3cqZAp">
           <node concept="3clFbS" id="5RdIVoLqyoo" role="3clFbx">
@@ -4841,6 +4903,41 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="1JaOyno3gE$" role="jymVt" />
+    <node concept="3clFb_" id="1JaOyno3WTP" role="jymVt">
+      <property role="TrG5h" value="appendComment" />
+      <node concept="3clFbS" id="1JaOyno3WTR" role="3clF47">
+        <node concept="3clFbF" id="1JaOyno3WTS" role="3cqZAp">
+          <node concept="2OqwBi" id="1JaOyno3WTT" role="3clFbG">
+            <node concept="liA8E" id="1JaOyno3WTX" role="2OqNvi">
+              <ref role="37wK5l" node="5uqoS$$jdCX" resolve="add" />
+              <node concept="1rXfSq" id="1JaOyno4b7r" role="37wK5m">
+                <ref role="37wK5l" node="1NoKjFbfy6i" resolve="createCommentStatement" />
+                <node concept="37vLTw" id="1JaOyno4cpY" role="37wK5m">
+                  <ref role="3cqZAo" node="1JaOyno3WU0" resolve="text" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="1JaOyno49NC" role="2Oq$k0">
+              <ref role="3cqZAo" node="5uqoS$$ZdYT" resolve="statements" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="1JaOyno3WTZ" role="3clF45" />
+      <node concept="37vLTG" id="1JaOyno3WU0" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <node concept="17QB3L" id="1JaOyno3WU1" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="1JaOyno3WU2" role="lGtFl">
+        <node concept="TZ5HA" id="1JaOyno3WU3" role="TZ5H$">
+          <node concept="1dT_AC" id="1JaOyno3WU4" role="1dT_Ay">
+            <property role="1dT_AB" value="Appends a comment with the given text." />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1JaOyno3WTY" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="5sSR8Yh86f_" role="jymVt" />
     <node concept="2tJIrI" id="5sSR8Yh8awi" role="jymVt" />
     <node concept="2tJIrI" id="5sSR8Yh8aEY" role="jymVt" />
@@ -7291,6 +7388,38 @@
         <node concept="TZ5HA" id="5RdIVoLnzaf" role="TZ5H$">
           <node concept="1dT_AC" id="5RdIVoLnzag" role="1dT_Ay">
             <property role="1dT_AB" value="Appends a space to the constructed TextGen." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1JaOyno37xz" role="jymVt" />
+    <node concept="3clFb_" id="1JaOyno3d_2" role="jymVt">
+      <property role="TrG5h" value="appendComment" />
+      <node concept="3clFbS" id="1JaOyno3d_5" role="3clF47">
+        <node concept="3clFbF" id="1JaOyno4giS" role="3cqZAp">
+          <node concept="2OqwBi" id="1JaOyno4gz9" role="3clFbG">
+            <node concept="37vLTw" id="1JaOyno4giR" role="2Oq$k0">
+              <ref role="3cqZAo" node="5uqoS$_2$$R" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="1JaOyno4ivA" role="2OqNvi">
+              <ref role="37wK5l" node="1JaOyno3WTP" resolve="appendComment" />
+              <node concept="37vLTw" id="1JaOyno4kQw" role="37wK5m">
+                <ref role="3cqZAo" node="1JaOyno4j1O" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1JaOyno3bzu" role="1B3o_S" />
+      <node concept="3cqZAl" id="1JaOyno3d$v" role="3clF45" />
+      <node concept="37vLTG" id="1JaOyno4j1O" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <node concept="17QB3L" id="1JaOyno4j1N" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="1JaOyno4n9N" role="lGtFl">
+        <node concept="TZ5HA" id="1JaOyno4n9O" role="TZ5H$">
+          <node concept="1dT_AC" id="1JaOyno4n9P" role="1dT_Ay">
+            <property role="1dT_AB" value="Appends a comment with the given text to the constructed TextGen." />
           </node>
         </node>
       </node>
