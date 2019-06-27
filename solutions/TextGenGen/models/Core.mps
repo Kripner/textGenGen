@@ -1746,6 +1746,49 @@
             <node concept="2jxLKc" id="1JaOyno1pup" role="1tU5fm" />
           </node>
         </node>
+        <node concept="Jncv_" id="1JaOyno5Nbm" role="3cqZAp">
+          <ref role="JncvD" to="tpc2:hPHlG0c" resolve="CellModel_ReadOnlyModelAccessor" />
+          <node concept="37vLTw" id="1JaOyno5NFT" role="JncvB">
+            <ref role="3cqZAo" node="2G_69760mcE" resolve="editorNode" />
+          </node>
+          <node concept="3clFbS" id="1JaOyno5Nbq" role="Jncv$">
+            <node concept="3clFbF" id="1JaOyno5P1S" role="3cqZAp">
+              <node concept="37vLTI" id="1JaOyno8ZDk" role="3clFbG">
+                <node concept="37vLTw" id="1JaOyno90ez" role="37vLTJ">
+                  <ref role="3cqZAo" node="5RdIVoLquFX" resolve="builder" />
+                </node>
+                <node concept="2OqwBi" id="1JaOyno6LTU" role="37vLTx">
+                  <node concept="37vLTw" id="1JaOyno6LME" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2G_69760mcG" resolve="textGenGenerator" />
+                  </node>
+                  <node concept="liA8E" id="1JaOyno6Mg$" role="2OqNvi">
+                    <ref role="37wK5l" node="1JaOyno6mQd" resolve="createConceptFunctionBuilder" />
+                    <node concept="2OqwBi" id="1JaOyno5XWC" role="37wK5m">
+                      <node concept="2OqwBi" id="1JaOyno5Pby" role="2Oq$k0">
+                        <node concept="Jnkvi" id="1JaOyno5P1R" role="2Oq$k0">
+                          <ref role="1M0zk5" node="1JaOyno5Nbs" resolve="roma" />
+                        </node>
+                        <node concept="3TrEf2" id="1JaOyno5UL6" role="2OqNvi">
+                          <ref role="3Tt5mk" to="tpc2:hPHlUPc" resolve="modelAccessor" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="1JaOyno61A1" role="2OqNvi">
+                        <ref role="3Tt5mk" to="tpc2:hPHht8X" resolve="getter" />
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="1JaOyno71cW" role="37wK5m">
+                      <ref role="3cqZAo" node="3$WA3A2k2Nn" resolve="nodeStyle" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="1JaOyno5Nbs" role="JncvA">
+            <property role="TrG5h" value="roma" />
+            <node concept="2jxLKc" id="1JaOyno5Nbt" role="1tU5fm" />
+          </node>
+        </node>
         <node concept="3clFbH" id="5RdIVoLqwTg" role="3cqZAp" />
         <node concept="3clFbJ" id="5RdIVoLqyom" role="3cqZAp">
           <node concept="3clFbS" id="5RdIVoLqyoo" role="3clFbx">
@@ -3419,6 +3462,23 @@
           </node>
         </node>
         <node concept="3clFbH" id="4Be1fkk8v$t" role="3cqZAp" />
+        <node concept="3clFbF" id="3Ibm9hdjLpu" role="3cqZAp">
+          <node concept="2OqwBi" id="3Ibm9hdkeAo" role="3clFbG">
+            <node concept="37vLTw" id="3Ibm9hdkaYV" role="2Oq$k0">
+              <ref role="3cqZAo" node="5uqoS$$ZdYT" resolve="statements" />
+            </node>
+            <node concept="liA8E" id="3Ibm9hdkmhp" role="2OqNvi">
+              <ref role="37wK5l" node="5uqoS$$jdCX" resolve="add" />
+              <node concept="1rXfSq" id="1NoKjFbgImW" role="37wK5m">
+                <ref role="37wK5l" node="1NoKjFbfy6i" resolve="createCommentStatement" />
+                <node concept="Xl_RD" id="1NoKjFbgPo1" role="37wK5m">
+                  <property role="Xl_RC" value="Inlined query computation follows &gt;&gt;&gt;" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3Ibm9hdjEAV" role="3cqZAp" />
         <node concept="3cpWs8" id="1EE3zMzBImN" role="3cqZAp">
           <node concept="3cpWsn" id="1EE3zMzBImO" role="3cpWs9">
             <property role="TrG5h" value="newQueryBody" />
@@ -3436,7 +3496,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7B2VEziO8r5" role="3cqZAp" />
         <node concept="3clFbF" id="5uqoS$_0ABn" role="3cqZAp">
           <node concept="2OqwBi" id="5uqoS$_0Czu" role="3clFbG">
             <node concept="37vLTw" id="5uqoS$_0ABl" role="2Oq$k0">
@@ -3450,6 +3509,23 @@
                 </node>
                 <node concept="2OwXpG" id="1EE3zMzBPVL" role="2OqNvi">
                   <ref role="2Oxat5" node="1EE3zMz_Khh" resolve="statements" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3Ibm9hdknLy" role="3cqZAp" />
+        <node concept="3clFbF" id="3Ibm9hdksEt" role="3cqZAp">
+          <node concept="2OqwBi" id="3Ibm9hdksEv" role="3clFbG">
+            <node concept="37vLTw" id="3Ibm9hdksEw" role="2Oq$k0">
+              <ref role="3cqZAo" node="5uqoS$$ZdYT" resolve="statements" />
+            </node>
+            <node concept="liA8E" id="3Ibm9hdksEx" role="2OqNvi">
+              <ref role="37wK5l" node="5uqoS$$jdCX" resolve="add" />
+              <node concept="1rXfSq" id="3Ibm9hdksEy" role="37wK5m">
+                <ref role="37wK5l" node="1NoKjFbfy6i" resolve="createCommentStatement" />
+                <node concept="Xl_RD" id="3Ibm9hdksEz" role="37wK5m">
+                  <property role="Xl_RC" value="&lt;&lt;&lt; Inlined query computation ends" />
                 </node>
               </node>
             </node>
@@ -5147,21 +5223,6 @@
             <property role="3SKdUp" value="&quot;statements&quot;" />
           </node>
         </node>
-        <node concept="3clFbF" id="1NoKjFbgImS" role="3cqZAp">
-          <node concept="2OqwBi" id="1NoKjFbgImT" role="3clFbG">
-            <node concept="37vLTw" id="1NoKjFbgImU" role="2Oq$k0">
-              <ref role="3cqZAo" node="1EE3zMzu6YG" resolve="newStatements" />
-            </node>
-            <node concept="TSZUe" id="1NoKjFbgImV" role="2OqNvi">
-              <node concept="1rXfSq" id="1NoKjFbgImW" role="25WWJ7">
-                <ref role="37wK5l" node="1NoKjFbfy6i" resolve="createCommentStatement" />
-                <node concept="Xl_RD" id="1NoKjFbgPo1" role="37wK5m">
-                  <property role="Xl_RC" value="Inlined show-if follows &gt;&gt;&gt;" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6BbWAvPrREi" role="3cqZAp">
           <node concept="2OqwBi" id="6BbWAvPrWTm" role="3clFbG">
             <node concept="37vLTw" id="6BbWAvPrV5_" role="2Oq$k0">
@@ -5262,21 +5323,6 @@
             <node concept="TSZUe" id="1EE3zMzEO_g" role="2OqNvi">
               <node concept="37vLTw" id="1EE3zMzEOQW" role="25WWJ7">
                 <ref role="3cqZAo" node="1EE3zMzpHHO" resolve="doWhile" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1NoKjFbgXAE" role="3cqZAp">
-          <node concept="2OqwBi" id="1NoKjFbgXAF" role="3clFbG">
-            <node concept="37vLTw" id="1NoKjFbgXAG" role="2Oq$k0">
-              <ref role="3cqZAo" node="1EE3zMzu6YG" resolve="newStatements" />
-            </node>
-            <node concept="TSZUe" id="1NoKjFbgXAH" role="2OqNvi">
-              <node concept="1rXfSq" id="1NoKjFbgXAI" role="25WWJ7">
-                <ref role="37wK5l" node="1NoKjFbfy6i" resolve="createCommentStatement" />
-                <node concept="Xl_RD" id="1NoKjFbgXAJ" role="37wK5m">
-                  <property role="Xl_RC" value="&lt;&lt;&lt; Inlined show-if ends" />
-                </node>
               </node>
             </node>
           </node>
@@ -6686,6 +6732,111 @@
         <node concept="TZ5HA" id="5RdIVoLkQpG" role="TZ5H$">
           <node concept="1dT_AC" id="5RdIVoLkQpH" role="1dT_Ay">
             <property role="1dT_AB" value="Creates a TextGenBuilder containing an append statement of a specific string value." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1JaOyno6p8M" role="jymVt" />
+    <node concept="3clFb_" id="1JaOyno6mQd" role="jymVt">
+      <property role="TrG5h" value="createConceptFunctionBuilder" />
+      <node concept="3clFbS" id="1JaOyno6mQe" role="3clF47">
+        <node concept="3cpWs8" id="1JaOynoamIy" role="3cqZAp">
+          <node concept="3cpWsn" id="1JaOynoamIz" role="3cpWs9">
+            <property role="TrG5h" value="builder" />
+            <node concept="3uibUv" id="1JaOynoamI$" role="1tU5fm">
+              <ref role="3uigEE" node="5uqoS$$ZdwS" resolve="TextGenBuilder" />
+            </node>
+            <node concept="2ShNRf" id="1JaOynoaqZ6" role="33vP2m">
+              <node concept="1pGfFk" id="1JaOynoard8" role="2ShVmc">
+                <ref role="37wK5l" node="5uqoS$_7Fz$" resolve="TextGenBuilder" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1JaOynofMf3" role="3cqZAp" />
+        <node concept="3cpWs8" id="1JaOyno9QLm" role="3cqZAp">
+          <node concept="3cpWsn" id="1JaOyno9QLp" role="3cpWs9">
+            <property role="TrG5h" value="returnValueToPrint" />
+            <node concept="3Tqbb2" id="1JaOyno9QLq" role="1tU5fm">
+              <ref role="ehGHo" to="tpee:fz3vP1J" resolve="Expression" />
+            </node>
+            <node concept="2OqwBi" id="1JaOyno9QLr" role="33vP2m">
+              <node concept="37vLTw" id="1JaOynoasTI" role="2Oq$k0">
+                <ref role="3cqZAo" node="1JaOynoamIz" resolve="builder" />
+              </node>
+              <node concept="liA8E" id="1JaOyno9QLt" role="2OqNvi">
+                <ref role="37wK5l" node="5uqoS$_0eqT" resolve="appendQueryComputation" />
+                <node concept="2ShNRf" id="1JaOynoabJw" role="37wK5m">
+                  <node concept="1pGfFk" id="1JaOynoac3Y" role="2ShVmc">
+                    <ref role="37wK5l" node="5uqoS$$ZnP2" resolve="Query" />
+                    <node concept="37vLTw" id="1JaOynoaccL" role="37wK5m">
+                      <ref role="3cqZAo" node="1JaOyno6mQy" resolve="conceptFunction" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="1JaOyno9QLv" role="37wK5m">
+                  <ref role="3cqZAo" node="3aST2zGnjLR" resolve="nodeParam" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1JaOynoaP$H" role="3cqZAp" />
+        <node concept="3clFbF" id="1JaOynoaJdI" role="3cqZAp">
+          <node concept="2OqwBi" id="1JaOynoaJdK" role="3clFbG">
+            <node concept="37vLTw" id="1JaOynoaLo8" role="2Oq$k0">
+              <ref role="3cqZAo" node="1JaOynoamIz" resolve="builder" />
+            </node>
+            <node concept="liA8E" id="1JaOynoaJdM" role="2OqNvi">
+              <ref role="37wK5l" node="5uqoS$_4gUF" resolve="append" />
+              <node concept="2YIFZM" id="1JaOynoaJdN" role="37wK5m">
+                <ref role="1Pybhc" node="5uqoS$$ZdwS" resolve="TextGenBuilder" />
+                <ref role="37wK5l" node="5uqoS$_ffNJ" resolve="appendNode" />
+                <node concept="37vLTw" id="1JaOynoaLuO" role="37wK5m">
+                  <ref role="3cqZAo" node="1JaOyno9QLp" resolve="returnValueToPrint" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1JaOynoaRuI" role="3cqZAp" />
+        <node concept="3cpWs6" id="1JaOyno6mQr" role="3cqZAp">
+          <node concept="1rXfSq" id="1JaOyno6mQs" role="3cqZAk">
+            <ref role="37wK5l" node="5uqoS$$tWoe" resolve="applyStyle" />
+            <node concept="37vLTw" id="1JaOynoaLB4" role="37wK5m">
+              <ref role="3cqZAo" node="1JaOynoamIz" resolve="builder" />
+            </node>
+            <node concept="37vLTw" id="1JaOyno6mQv" role="37wK5m">
+              <ref role="3cqZAo" node="1JaOyno6mQ$" resolve="style" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1JaOyno6mQw" role="1B3o_S" />
+      <node concept="3uibUv" id="1JaOyno6mQx" role="3clF45">
+        <ref role="3uigEE" node="5uqoS$$ZdwS" resolve="TextGenBuilder" />
+      </node>
+      <node concept="37vLTG" id="1JaOyno6mQy" role="3clF46">
+        <property role="TrG5h" value="conceptFunction" />
+        <node concept="3Tqbb2" id="1JaOynoa$q6" role="1tU5fm">
+          <ref role="ehGHo" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1JaOyno6mQ$" role="3clF46">
+        <property role="TrG5h" value="style" />
+        <node concept="3uibUv" id="1JaOyno6mQ_" role="1tU5fm">
+          <ref role="3uigEE" node="2G_6976bDNN" resolve="NodeStyleWrapper" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="1JaOyno6mQA" role="lGtFl">
+        <node concept="TZ5HA" id="1JaOyno6mQB" role="TZ5H$">
+          <node concept="1dT_AC" id="1JaOyno6mQC" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates a TextGenBuilder executing statements of the given ConceptFunction and printing the return value of" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="1JaOynoa2_6" role="TZ5H$">
+          <node concept="1dT_AC" id="1JaOynoa2_7" role="1dT_Ay">
+            <property role="1dT_AB" value="the ConceptFunction." />
           </node>
         </node>
       </node>
