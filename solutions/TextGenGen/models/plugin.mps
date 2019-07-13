@@ -314,6 +314,7 @@
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1688,55 +1689,7 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="5uqoS$_IKDZ" role="3cqZAp">
-          <node concept="3cpWsn" id="5uqoS$_IKE0" role="3cpWs9">
-            <property role="TrG5h" value="form" />
-            <node concept="3uibUv" id="5YkfYpE1VVK" role="1tU5fm">
-              <ref role="3uigEE" to="d2ft:~MainForm" resolve="MainForm" />
-            </node>
-            <node concept="2ShNRf" id="5uqoS$_IKE1" role="33vP2m">
-              <node concept="1pGfFk" id="5uqoS$_IKE2" role="2ShVmc">
-                <ref role="37wK5l" to="d2ft:~MainForm(String)" resolve="MainForm" />
-                <node concept="2OqwBi" id="2ulVZ9Np3h$" role="37wK5m">
-                  <node concept="37vLTw" id="2ulVZ9NzxOE" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2ulVZ9Nzx1n" resolve="selectedLanguage" />
-                  </node>
-                  <node concept="liA8E" id="2ulVZ9Np3Dd" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName()" resolve="getModuleName" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="5uqoS$_KfxP" role="3cqZAp">
-          <node concept="3cpWsn" id="5uqoS$_KfxQ" role="3cpWs9">
-            <property role="TrG5h" value="userInput" />
-            <node concept="3uibUv" id="5YkfYpE1WtS" role="1tU5fm">
-              <ref role="3uigEE" to="d2ft:~UserInput" resolve="UserInput" />
-            </node>
-            <node concept="2OqwBi" id="5uqoS$_KfxR" role="33vP2m">
-              <node concept="37vLTw" id="5uqoS$_KfxS" role="2Oq$k0">
-                <ref role="3cqZAo" node="5uqoS$_IKE0" resolve="form" />
-              </node>
-              <node concept="liA8E" id="5uqoS$_KfxT" role="2OqNvi">
-                <ref role="37wK5l" to="d2ft:~MainForm.initAndDisplay()" resolve="initAndDisplay" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="2ulVZ9NcAOa" role="3cqZAp">
-          <node concept="3clFbS" id="2ulVZ9NcAOc" role="3clFbx">
-            <node concept="3cpWs6" id="2ulVZ9NcBNs" role="3cqZAp" />
-          </node>
-          <node concept="3clFbC" id="2ulVZ9NcBv8" role="3clFbw">
-            <node concept="10Nm6u" id="2ulVZ9NcBGq" role="3uHU7w" />
-            <node concept="37vLTw" id="2ulVZ9NcB9f" role="3uHU7B">
-              <ref role="3cqZAo" node="5uqoS$_KfxQ" resolve="userInput" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="5YkfYpE5c8X" role="3cqZAp">
+        <node concept="3cpWs8" id="zkUSVfpSaL" role="3cqZAp">
           <node concept="3cpWsn" id="5YkfYpE5c8Y" role="3cpWs9">
             <property role="TrG5h" value="repository" />
             <node concept="3uibUv" id="5YkfYpE5c8R" role="1tU5fm">
@@ -1752,6 +1705,82 @@
               <node concept="liA8E" id="5YkfYpE5c93" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="zkUSVfpSFi" role="3cqZAp" />
+        <node concept="3SKdUt" id="zkUSVfpTI$" role="3cqZAp">
+          <node concept="3SKdUq" id="zkUSVfpTIA" role="3SKWNk">
+            <property role="3SKdUp" value="Uncomment this if you want the plugin to ask the user for a name extension of TextGen nodes:" />
+          </node>
+        </node>
+        <node concept="1X3_iC" id="zkUSVfpPFO" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="5uqoS$_IKDZ" role="8Wnug">
+            <node concept="3cpWsn" id="5uqoS$_IKE0" role="3cpWs9">
+              <property role="TrG5h" value="form" />
+              <node concept="3uibUv" id="5YkfYpE1VVK" role="1tU5fm">
+                <ref role="3uigEE" to="d2ft:~MainForm" resolve="MainForm" />
+              </node>
+              <node concept="2ShNRf" id="5uqoS$_IKE1" role="33vP2m">
+                <node concept="1pGfFk" id="5uqoS$_IKE2" role="2ShVmc">
+                  <ref role="37wK5l" to="d2ft:~MainForm(String)" resolve="MainForm" />
+                  <node concept="2OqwBi" id="2ulVZ9Np3h$" role="37wK5m">
+                    <node concept="37vLTw" id="2ulVZ9NzxOE" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2ulVZ9Nzx1n" resolve="selectedLanguage" />
+                    </node>
+                    <node concept="liA8E" id="2ulVZ9Np3Dd" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName()" resolve="getModuleName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="zkUSVfpQff" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="5uqoS$_KfxP" role="8Wnug">
+            <node concept="3cpWsn" id="5uqoS$_KfxQ" role="3cpWs9">
+              <property role="TrG5h" value="userInput" />
+              <node concept="3uibUv" id="5YkfYpE1WtS" role="1tU5fm">
+                <ref role="3uigEE" to="d2ft:~UserInput" resolve="UserInput" />
+              </node>
+              <node concept="2OqwBi" id="5uqoS$_KfxR" role="33vP2m">
+                <node concept="37vLTw" id="5uqoS$_KfxS" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5uqoS$_IKE0" resolve="form" />
+                </node>
+                <node concept="liA8E" id="5uqoS$_KfxT" role="2OqNvi">
+                  <ref role="37wK5l" to="d2ft:~MainForm.initAndDisplay()" resolve="initAndDisplay" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="zkUSVfpYGm" role="3cqZAp">
+          <node concept="3cpWsn" id="zkUSVfpYGn" role="3cpWs9">
+            <property role="TrG5h" value="userInput" />
+            <node concept="3uibUv" id="zkUSVfqgl1" role="1tU5fm">
+              <ref role="3uigEE" to="d2ft:~UserInput" resolve="UserInput" />
+            </node>
+            <node concept="2ShNRf" id="zkUSVfpZdd" role="33vP2m">
+              <node concept="1pGfFk" id="zkUSVfqgck" role="2ShVmc">
+                <ref role="37wK5l" to="d2ft:~UserInput(String)" resolve="UserInput" />
+                <node concept="Xl_RD" id="zkUSVfqgd1" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2ulVZ9NcAOa" role="3cqZAp">
+          <node concept="3clFbS" id="2ulVZ9NcAOc" role="3clFbx">
+            <node concept="3cpWs6" id="2ulVZ9NcBNs" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="2ulVZ9NcBv8" role="3clFbw">
+            <node concept="10Nm6u" id="2ulVZ9NcBGq" role="3uHU7w" />
+            <node concept="37vLTw" id="zkUSVfqglP" role="3uHU7B">
+              <ref role="3cqZAo" node="zkUSVfpYGn" resolve="userInput" />
             </node>
           </node>
         </node>
@@ -1790,6 +1819,22 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbJ" id="2ulVZ9N$Qjk" role="3cqZAp">
+                          <node concept="3clFbS" id="2ulVZ9N$Qjl" role="3clFbx">
+                            <node concept="3cpWs6" id="2ulVZ9N$Qjr" role="3cqZAp">
+                              <node concept="Xl_RD" id="2ulVZ9N$Qjq" role="3cqZAk">
+                                <property role="Xl_RC" value="No editor found in the chosen module. TextGen can therefore not be generated." />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbC" id="2ulVZ9N$Qjs" role="3clFbw">
+                            <node concept="10Nm6u" id="2ulVZ9N$Qjt" role="3uHU7w" />
+                            <node concept="37vLTw" id="2ulVZ9N$Qju" role="3uHU7B">
+                              <ref role="3cqZAo" node="2ulVZ9N$Qj7" resolve="editorModel" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="zkUSVfpHkA" role="3cqZAp" />
                         <node concept="3cpWs8" id="2ulVZ9N$Qjd" role="3cqZAp">
                           <node concept="3cpWsn" id="2ulVZ9N$Qje" role="3cpWs9">
                             <property role="TrG5h" value="textGenModel" />
@@ -1805,21 +1850,6 @@
                                   <ref role="3cqZAo" node="2ulVZ9Nzx1n" resolve="selectedLanguage" />
                                 </node>
                               </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3clFbJ" id="2ulVZ9N$Qjk" role="3cqZAp">
-                          <node concept="3clFbS" id="2ulVZ9N$Qjl" role="3clFbx">
-                            <node concept="3cpWs6" id="2ulVZ9N$Qjr" role="3cqZAp">
-                              <node concept="Xl_RD" id="2ulVZ9N$Qjq" role="3cqZAk">
-                                <property role="Xl_RC" value="No editor found in the chosen module. TextGen can therefore not be generated." />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbC" id="2ulVZ9N$Qjs" role="3clFbw">
-                            <node concept="10Nm6u" id="2ulVZ9N$Qjt" role="3uHU7w" />
-                            <node concept="37vLTw" id="2ulVZ9N$Qju" role="3uHU7B">
-                              <ref role="3cqZAo" node="2ulVZ9N$Qj7" resolve="editorModel" />
                             </node>
                           </node>
                         </node>
@@ -1852,6 +1882,36 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbH" id="zkUSVfpHY$" role="3cqZAp" />
+                        <node concept="3clFbF" id="zkUSVfpqci" role="3cqZAp">
+                          <node concept="2OqwBi" id="zkUSVfp$lr" role="3clFbG">
+                            <node concept="2OqwBi" id="zkUSVfpqCf" role="2Oq$k0">
+                              <node concept="37vLTw" id="zkUSVfpqcg" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2ulVZ9N$Qje" resolve="textGenModel" />
+                              </node>
+                              <node concept="2RRcyG" id="zkUSVfpzle" role="2OqNvi" />
+                            </node>
+                            <node concept="2es0OD" id="zkUSVfp_OF" role="2OqNvi">
+                              <node concept="1bVj0M" id="zkUSVfp_OH" role="23t8la">
+                                <node concept="3clFbS" id="zkUSVfp_OI" role="1bW5cS">
+                                  <node concept="3clFbF" id="zkUSVfpAfp" role="3cqZAp">
+                                    <node concept="2OqwBi" id="zkUSVfpABs" role="3clFbG">
+                                      <node concept="37vLTw" id="zkUSVfpAfo" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="zkUSVfp_OJ" resolve="it" />
+                                      </node>
+                                      <node concept="3YRAZt" id="zkUSVfpBK1" role="2OqNvi" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="Rh6nW" id="zkUSVfp_OJ" role="1bW2Oz">
+                                  <property role="TrG5h" value="it" />
+                                  <node concept="2jxLKc" id="zkUSVfp_OK" role="1tU5fm" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="zkUSVfpInc" role="3cqZAp" />
                         <node concept="3clFbF" id="2ulVZ9N$QjU" role="3cqZAp">
                           <node concept="2OqwBi" id="2ulVZ9N$QjV" role="3clFbG">
                             <node concept="2OqwBi" id="2ulVZ9N$QjW" role="2Oq$k0">
@@ -1874,8 +1934,8 @@
                                           <ref role="3cqZAo" node="2ulVZ9N$Qkb" resolve="it" />
                                         </node>
                                         <node concept="2OqwBi" id="4Sg5$EtEsMJ" role="37wK5m">
-                                          <node concept="37vLTw" id="4Sg5$EtEsrg" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="5uqoS$_KfxQ" resolve="userInput" />
+                                          <node concept="37vLTw" id="zkUSVfqgpa" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="zkUSVfpYGn" resolve="userInput" />
                                           </node>
                                           <node concept="liA8E" id="4Sg5$EtEvWZ" role="2OqNvi">
                                             <ref role="37wK5l" to="d2ft:~UserInput.getExtension()" resolve="getExtension" />
@@ -1900,7 +1960,7 @@
                                         <ref role="3cqZAo" node="2ulVZ9N$Qje" resolve="textGenModel" />
                                       </node>
                                       <node concept="3BYIHo" id="2ulVZ9N$Qkj" role="2OqNvi">
-                                        <node concept="37vLTw" id="2ulVZ9N$Qkk" role="3BYIHq">
+                                        <node concept="37vLTw" id="zkUSVfpn1s" role="3BYIHq">
                                           <ref role="3cqZAo" node="2ulVZ9N$Qkl" resolve="it" />
                                         </node>
                                       </node>
@@ -1915,6 +1975,7 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbH" id="zkUSVfpIIv" role="3cqZAp" />
                         <node concept="3cpWs6" id="2ulVZ9N$Umx" role="3cqZAp">
                           <node concept="10Nm6u" id="2ulVZ9N$UpV" role="3cqZAk" />
                         </node>
@@ -1970,6 +2031,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="zkUSVfpJ5N" role="3cqZAp" />
         <node concept="2xdQw9" id="2AOWw_u4Uc2" role="3cqZAp">
           <property role="2xdLsb" value="debug" />
           <node concept="Xl_RD" id="2AOWw_u4Uc4" role="9lYJi">
