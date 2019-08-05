@@ -412,6 +412,7 @@
         <child id="1225645893896" name="index" index="1uc2wl" />
         <child id="1225645893898" name="element" index="1uc2wn" />
       </concept>
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
@@ -9553,11 +9554,18 @@
                           <node concept="chp4Y" id="7rLNIDEr41$" role="3oSUPX">
                             <ref role="cht4Q" to="tpc2:hJF0Tl2" resolve="IStyleContainer" />
                           </node>
-                          <node concept="2OqwBi" id="7rLNIDEr41_" role="1m5AlR">
-                            <node concept="37vLTw" id="7rLNIDEsxTk" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7rLNIDEsqVC" resolve="node" />
+                          <node concept="1eOMI4" id="6ZBb7lbrosv" role="1m5AlR">
+                            <node concept="10QFUN" id="6ZBb7lbroyO" role="1eOMHV">
+                              <node concept="2OqwBi" id="7rLNIDEr41_" role="10QFUP">
+                                <node concept="37vLTw" id="7rLNIDEsxTk" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="7rLNIDEsqVC" resolve="node" />
+                                </node>
+                                <node concept="YCak7" id="7rLNIDEr41B" role="2OqNvi" />
+                              </node>
+                              <node concept="3Tqbb2" id="6ZBb7lbroDg" role="10QFUM">
+                                <ref role="ehGHo" to="tpc2:fGPMmym" resolve="CellModel_Component" />
+                              </node>
                             </node>
-                            <node concept="YCak7" id="7rLNIDEr41B" role="2OqNvi" />
                           </node>
                         </node>
                       </node>
@@ -9567,14 +9575,131 @@
               </node>
               <node concept="2OqwBi" id="7rLNIDEqZsC" role="3clFbw">
                 <node concept="2OqwBi" id="7rLNIDEqZsD" role="2Oq$k0">
-                  <node concept="37vLTw" id="7rLNIDEswrE" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7rLNIDEsqVC" resolve="node" />
+                  <node concept="2OqwBi" id="6ZBb7lbrp5p" role="2Oq$k0">
+                    <node concept="37vLTw" id="7rLNIDEswrE" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7rLNIDEsqVC" resolve="node" />
+                    </node>
+                    <node concept="YCak7" id="6ZBb7lbrpAg" role="2OqNvi" />
                   </node>
                   <node concept="2yIwOk" id="7rLNIDEqZsF" role="2OqNvi" />
                 </node>
                 <node concept="2Zo12i" id="7rLNIDEqZsG" role="2OqNvi">
                   <node concept="chp4Y" id="7rLNIDEqZsH" role="2Zo12j">
                     <ref role="cht4Q" to="tpc2:fGPMmym" resolve="CellModel_Component" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6ZBb7lbrsuE" role="3cqZAp" />
+            <node concept="3SKdUt" id="6ZBb7lbrqJf" role="3cqZAp">
+              <node concept="3SKdUq" id="6ZBb7lbrqJg" role="3SKWNk">
+                <property role="3SKdUp" value="If the next sibling is a collection get also styling of the first node of that collection" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6ZBb7lbrqJh" role="3cqZAp">
+              <node concept="3cpWsn" id="6ZBb7lbrqJi" role="3cpWs9">
+                <property role="TrG5h" value="isNextSiblingNonEmptyCollection" />
+                <node concept="10P_77" id="6ZBb7lbrqJj" role="1tU5fm" />
+                <node concept="3clFbT" id="6ZBb7lbrqJk" role="33vP2m" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6ZBb7lbrqJl" role="3cqZAp">
+              <node concept="3cpWsn" id="6ZBb7lbrqJm" role="3cpWs9">
+                <property role="TrG5h" value="nextSiblingFirstCollectionElementStyle" />
+                <node concept="3uibUv" id="6ZBb7lbrqJn" role="1tU5fm">
+                  <ref role="3uigEE" node="2G_6976bDNN" resolve="CustomStyleContainer" />
+                </node>
+                <node concept="10Nm6u" id="6ZBb7lbrqJo" role="33vP2m" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6ZBb7lbrqJp" role="3cqZAp">
+              <node concept="3clFbS" id="6ZBb7lbrqJq" role="3clFbx">
+                <node concept="3cpWs8" id="6ZBb7lbrMup" role="3cqZAp">
+                  <node concept="3cpWsn" id="6ZBb7lbrMus" role="3cpWs9">
+                    <property role="TrG5h" value="nextSiblingCollection" />
+                    <node concept="3Tqbb2" id="6ZBb7lbrMun" role="1tU5fm">
+                      <ref role="ehGHo" to="tpc2:fBEZMkn" resolve="CellModel_Collection" />
+                    </node>
+                    <node concept="10QFUN" id="6ZBb7lbrMzs" role="33vP2m">
+                      <node concept="2OqwBi" id="6ZBb7lbrMzt" role="10QFUP">
+                        <node concept="37vLTw" id="6ZBb7lbrMzu" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7rLNIDEsqVC" resolve="node" />
+                        </node>
+                        <node concept="YCak7" id="6ZBb7lbrMzv" role="2OqNvi" />
+                      </node>
+                      <node concept="3Tqbb2" id="6ZBb7lbrMzw" role="10QFUM">
+                        <ref role="ehGHo" to="tpc2:fBEZMkn" resolve="CellModel_Collection" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6ZBb7lbrqJr" role="3cqZAp">
+                  <node concept="37vLTI" id="6ZBb7lbrqJs" role="3clFbG">
+                    <node concept="2OqwBi" id="6ZBb7lbrXYG" role="37vLTx">
+                      <node concept="2OqwBi" id="6ZBb7lbrNtG" role="2Oq$k0">
+                        <node concept="37vLTw" id="6ZBb7lbrNgv" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6ZBb7lbrMus" resolve="nextSiblingCollection" />
+                        </node>
+                        <node concept="3Tsc0h" id="6ZBb7lbrS8N" role="2OqNvi">
+                          <ref role="3TtcxE" to="tpc2:fBEZMko" resolve="childCellModel" />
+                        </node>
+                      </node>
+                      <node concept="3GX2aA" id="6ZBb7lbsb0z" role="2OqNvi" />
+                    </node>
+                    <node concept="37vLTw" id="6ZBb7lbrqJu" role="37vLTJ">
+                      <ref role="3cqZAo" node="6ZBb7lbrqJi" resolve="isNextSiblingNonEmptyCollection" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="6ZBb7lbsbdL" role="3cqZAp">
+                  <node concept="3clFbS" id="6ZBb7lbsbdN" role="3clFbx">
+                    <node concept="3clFbF" id="6ZBb7lbsbmv" role="3cqZAp">
+                      <node concept="37vLTI" id="6ZBb7lbrqJw" role="3clFbG">
+                        <node concept="37vLTw" id="6ZBb7lbrqJx" role="37vLTJ">
+                          <ref role="3cqZAo" node="6ZBb7lbrqJm" resolve="nextSiblingFirstCollectionElementStyle" />
+                        </node>
+                        <node concept="2ShNRf" id="6ZBb7lbrqJy" role="37vLTx">
+                          <node concept="1pGfFk" id="6ZBb7lbrqJz" role="2ShVmc">
+                            <ref role="37wK5l" node="2G_6976bDXb" resolve="CustomStyleContainer" />
+                            <node concept="1PxgMI" id="6ZBb7lbrqJ$" role="37wK5m">
+                              <node concept="chp4Y" id="6ZBb7lbrqJ_" role="3oSUPX">
+                                <ref role="cht4Q" to="tpc2:hJF0Tl2" resolve="IStyleContainer" />
+                              </node>
+                              <node concept="2OqwBi" id="6ZBb7lbrDsr" role="1m5AlR">
+                                <node concept="2OqwBi" id="6ZBb7lbru08" role="2Oq$k0">
+                                  <node concept="3Tsc0h" id="6ZBb7lbrz_q" role="2OqNvi">
+                                    <ref role="3TtcxE" to="tpc2:fBEZMko" resolve="childCellModel" />
+                                  </node>
+                                  <node concept="37vLTw" id="6ZBb7lbrMOG" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="6ZBb7lbrMus" resolve="nextSiblingCollection" />
+                                  </node>
+                                </node>
+                                <node concept="1uHKPH" id="6ZBb7lbrMna" role="2OqNvi" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="6ZBb7lbsbfs" role="3clFbw">
+                    <ref role="3cqZAo" node="6ZBb7lbrqJi" resolve="isNextSiblingNonEmptyCollection" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6ZBb7lbrqJG" role="3clFbw">
+                <node concept="2OqwBi" id="6ZBb7lbrqJH" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6ZBb7lbrqJI" role="2Oq$k0">
+                    <node concept="37vLTw" id="6ZBb7lbrqJJ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7rLNIDEsqVC" resolve="node" />
+                    </node>
+                    <node concept="YCak7" id="6ZBb7lbrqJK" role="2OqNvi" />
+                  </node>
+                  <node concept="2yIwOk" id="6ZBb7lbrqJL" role="2OqNvi" />
+                </node>
+                <node concept="2Zo12i" id="6ZBb7lbrqJM" role="2OqNvi">
+                  <node concept="chp4Y" id="6ZBb7lbrtBV" role="2Zo12j">
+                    <ref role="cht4Q" to="tpc2:fBEZMkn" resolve="CellModel_Collection" />
                   </node>
                 </node>
               </node>
@@ -9589,43 +9714,62 @@
               <node concept="3cpWsn" id="7rLNIDEkXB9" role="3cpWs9">
                 <property role="TrG5h" value="isNextSiblingOnNewLine" />
                 <node concept="10P_77" id="7rLNIDEkXBa" role="1tU5fm" />
-                <node concept="22lmx$" id="7rLNIDErzhQ" role="33vP2m">
-                  <node concept="1eOMI4" id="7rLNIDErzrd" role="3uHU7w">
-                    <node concept="1Wc70l" id="7rLNIDErzWo" role="1eOMHV">
-                      <node concept="37vLTw" id="7rLNIDErzy$" role="3uHU7B">
-                        <ref role="3cqZAo" node="7rLNIDEr0aU" resolve="isNextSiblingComponent" />
+                <node concept="22lmx$" id="6ZBb7lbsbLH" role="33vP2m">
+                  <node concept="1eOMI4" id="6ZBb7lbsbYf" role="3uHU7w">
+                    <node concept="1Wc70l" id="6ZBb7lbscxu" role="1eOMHV">
+                      <node concept="37vLTw" id="6ZBb7lbsc6_" role="3uHU7B">
+                        <ref role="3cqZAo" node="6ZBb7lbrqJi" resolve="isNextSiblingNonEmptyCollection" />
                       </node>
-                      <node concept="2YIFZM" id="7rLNIDEr$3Q" role="3uHU7w">
-                        <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                      <node concept="2YIFZM" id="6ZBb7lbscDB" role="3uHU7w">
                         <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
-                        <node concept="37vLTw" id="7rLNIDEr$d1" role="37wK5m">
-                          <ref role="3cqZAo" node="7rLNIDEr2Lx" resolve="nextSiblingComponentStyle" />
+                        <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                        <node concept="37vLTw" id="6ZBb7lbscO8" role="37wK5m">
+                          <ref role="3cqZAo" node="6ZBb7lbrqJm" resolve="nextSiblingFirstCollectionElementStyle" />
                         </node>
-                        <node concept="35c_gC" id="7rLNIDEr$3S" role="37wK5m">
+                        <node concept="35c_gC" id="6ZBb7lbscDD" role="37wK5m">
                           <ref role="35c_gD" to="tpc2:i0pVoAY" resolve="IndentLayoutOnNewLineStyleClassItem" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="22lmx$" id="7rLNIDEkXBb" role="3uHU7B">
-                    <node concept="2YIFZM" id="7rLNIDEkXBf" role="3uHU7B">
-                      <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
-                      <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
-                      <node concept="37vLTw" id="7rLNIDEsAl2" role="37wK5m">
-                        <ref role="3cqZAo" node="7rLNIDEszm$" resolve="styleStyle" />
+                  <node concept="22lmx$" id="7rLNIDErzhQ" role="3uHU7B">
+                    <node concept="22lmx$" id="7rLNIDEkXBb" role="3uHU7B">
+                      <node concept="2YIFZM" id="7rLNIDEkXBf" role="3uHU7B">
+                        <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
+                        <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                        <node concept="37vLTw" id="7rLNIDEsAl2" role="37wK5m">
+                          <ref role="3cqZAo" node="7rLNIDEszm$" resolve="styleStyle" />
+                        </node>
+                        <node concept="35c_gC" id="7rLNIDEkXBh" role="37wK5m">
+                          <ref role="35c_gD" to="tpc2:i0ljvrN" resolve="IndentLayoutNewLineStyleClassItem" />
+                        </node>
                       </node>
-                      <node concept="35c_gC" id="7rLNIDEkXBh" role="37wK5m">
-                        <ref role="35c_gD" to="tpc2:i0ljvrN" resolve="IndentLayoutNewLineStyleClassItem" />
+                      <node concept="2YIFZM" id="7rLNIDEkXBc" role="3uHU7w">
+                        <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
+                        <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                        <node concept="37vLTw" id="7rLNIDEkXBd" role="37wK5m">
+                          <ref role="3cqZAo" node="7rLNIDEkXAZ" resolve="nextSiblingStyle" />
+                        </node>
+                        <node concept="35c_gC" id="7rLNIDEkXBe" role="37wK5m">
+                          <ref role="35c_gD" to="tpc2:i0pVoAY" resolve="IndentLayoutOnNewLineStyleClassItem" />
+                        </node>
                       </node>
                     </node>
-                    <node concept="2YIFZM" id="7rLNIDEkXBc" role="3uHU7w">
-                      <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
-                      <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
-                      <node concept="37vLTw" id="7rLNIDEkXBd" role="37wK5m">
-                        <ref role="3cqZAo" node="7rLNIDEkXAZ" resolve="nextSiblingStyle" />
-                      </node>
-                      <node concept="35c_gC" id="7rLNIDEkXBe" role="37wK5m">
-                        <ref role="35c_gD" to="tpc2:i0pVoAY" resolve="IndentLayoutOnNewLineStyleClassItem" />
+                    <node concept="1eOMI4" id="7rLNIDErzrd" role="3uHU7w">
+                      <node concept="1Wc70l" id="7rLNIDErzWo" role="1eOMHV">
+                        <node concept="37vLTw" id="7rLNIDErzy$" role="3uHU7B">
+                          <ref role="3cqZAo" node="7rLNIDEr0aU" resolve="isNextSiblingComponent" />
+                        </node>
+                        <node concept="2YIFZM" id="7rLNIDEr$3Q" role="3uHU7w">
+                          <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                          <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
+                          <node concept="37vLTw" id="7rLNIDEr$d1" role="37wK5m">
+                            <ref role="3cqZAo" node="7rLNIDEr2Lx" resolve="nextSiblingComponentStyle" />
+                          </node>
+                          <node concept="35c_gC" id="7rLNIDEr$3S" role="37wK5m">
+                            <ref role="35c_gD" to="tpc2:i0pVoAY" resolve="IndentLayoutOnNewLineStyleClassItem" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -9636,41 +9780,60 @@
               <node concept="3cpWsn" id="7rLNIDEkXBj" role="3cpWs9">
                 <property role="TrG5h" value="isPunctuationEnabled" />
                 <node concept="10P_77" id="7rLNIDEkXBk" role="1tU5fm" />
-                <node concept="22lmx$" id="7rLNIDEs1LR" role="33vP2m">
-                  <node concept="22lmx$" id="7rLNIDEkXBl" role="3uHU7B">
-                    <node concept="2YIFZM" id="7rLNIDEkXBp" role="3uHU7B">
-                      <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
-                      <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
-                      <node concept="37vLTw" id="7rLNIDEsAuI" role="37wK5m">
-                        <ref role="3cqZAo" node="7rLNIDEszm$" resolve="styleStyle" />
+                <node concept="22lmx$" id="6ZBb7lbsdb7" role="33vP2m">
+                  <node concept="22lmx$" id="7rLNIDEs1LR" role="3uHU7B">
+                    <node concept="22lmx$" id="7rLNIDEkXBl" role="3uHU7B">
+                      <node concept="2YIFZM" id="7rLNIDEkXBp" role="3uHU7B">
+                        <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                        <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
+                        <node concept="37vLTw" id="7rLNIDEsAuI" role="37wK5m">
+                          <ref role="3cqZAo" node="7rLNIDEszm$" resolve="styleStyle" />
+                        </node>
+                        <node concept="35c_gC" id="7rLNIDEkXBr" role="37wK5m">
+                          <ref role="35c_gD" to="tpc2:hX1LMvx" resolve="PunctuationRightStyleClassItem" />
+                        </node>
                       </node>
-                      <node concept="35c_gC" id="7rLNIDEkXBr" role="37wK5m">
-                        <ref role="35c_gD" to="tpc2:hX1LMvx" resolve="PunctuationRightStyleClassItem" />
+                      <node concept="2YIFZM" id="7rLNIDEkXBm" role="3uHU7w">
+                        <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
+                        <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                        <node concept="37vLTw" id="7rLNIDEkXBn" role="37wK5m">
+                          <ref role="3cqZAo" node="7rLNIDEkXAZ" resolve="nextSiblingStyle" />
+                        </node>
+                        <node concept="35c_gC" id="7rLNIDEkXBo" role="37wK5m">
+                          <ref role="35c_gD" to="tpc2:hX1L4JR" resolve="PunctuationLeftStyleClassItem" />
+                        </node>
                       </node>
                     </node>
-                    <node concept="2YIFZM" id="7rLNIDEkXBm" role="3uHU7w">
-                      <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
-                      <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
-                      <node concept="37vLTw" id="7rLNIDEkXBn" role="37wK5m">
-                        <ref role="3cqZAo" node="7rLNIDEkXAZ" resolve="nextSiblingStyle" />
-                      </node>
-                      <node concept="35c_gC" id="7rLNIDEkXBo" role="37wK5m">
-                        <ref role="35c_gD" to="tpc2:hX1L4JR" resolve="PunctuationLeftStyleClassItem" />
+                    <node concept="1eOMI4" id="7rLNIDEs1Vb" role="3uHU7w">
+                      <node concept="1Wc70l" id="7rLNIDEs1Vc" role="1eOMHV">
+                        <node concept="37vLTw" id="7rLNIDEs1Vd" role="3uHU7B">
+                          <ref role="3cqZAo" node="7rLNIDEr0aU" resolve="isNextSiblingComponent" />
+                        </node>
+                        <node concept="2YIFZM" id="7rLNIDEs1Ve" role="3uHU7w">
+                          <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                          <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
+                          <node concept="37vLTw" id="7rLNIDEs1Vf" role="37wK5m">
+                            <ref role="3cqZAo" node="7rLNIDEr2Lx" resolve="nextSiblingComponentStyle" />
+                          </node>
+                          <node concept="35c_gC" id="7rLNIDEs1Vg" role="37wK5m">
+                            <ref role="35c_gD" to="tpc2:hX1L4JR" resolve="PunctuationLeftStyleClassItem" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="1eOMI4" id="7rLNIDEs1Vb" role="3uHU7w">
-                    <node concept="1Wc70l" id="7rLNIDEs1Vc" role="1eOMHV">
-                      <node concept="37vLTw" id="7rLNIDEs1Vd" role="3uHU7B">
-                        <ref role="3cqZAo" node="7rLNIDEr0aU" resolve="isNextSiblingComponent" />
+                  <node concept="1eOMI4" id="6ZBb7lbsdnz" role="3uHU7w">
+                    <node concept="1Wc70l" id="6ZBb7lbsdn$" role="1eOMHV">
+                      <node concept="37vLTw" id="6ZBb7lbsdn_" role="3uHU7B">
+                        <ref role="3cqZAo" node="6ZBb7lbrqJi" resolve="isNextSiblingNonEmptyCollection" />
                       </node>
-                      <node concept="2YIFZM" id="7rLNIDEs1Ve" role="3uHU7w">
-                        <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                      <node concept="2YIFZM" id="6ZBb7lbsdnA" role="3uHU7w">
                         <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
-                        <node concept="37vLTw" id="7rLNIDEs1Vf" role="37wK5m">
-                          <ref role="3cqZAo" node="7rLNIDEr2Lx" resolve="nextSiblingComponentStyle" />
+                        <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                        <node concept="37vLTw" id="6ZBb7lbsdnB" role="37wK5m">
+                          <ref role="3cqZAo" node="6ZBb7lbrqJm" resolve="nextSiblingFirstCollectionElementStyle" />
                         </node>
-                        <node concept="35c_gC" id="7rLNIDEs1Vg" role="37wK5m">
+                        <node concept="35c_gC" id="6ZBb7lbsdnC" role="37wK5m">
                           <ref role="35c_gD" to="tpc2:hX1L4JR" resolve="PunctuationLeftStyleClassItem" />
                         </node>
                       </node>
@@ -9854,8 +10017,18 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="37vLTw" id="7rLNIDEs3GL" role="3eO9$A">
-                      <ref role="3cqZAo" node="7rLNIDEr0aU" resolve="isNextSiblingComponent" />
+                    <node concept="2OqwBi" id="6ZBb7lbrpDx" role="3eO9$A">
+                      <node concept="2OqwBi" id="6ZBb7lbrpDy" role="2Oq$k0">
+                        <node concept="37vLTw" id="6ZBb7lbrpD$" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7rLNIDEsqVC" resolve="node" />
+                        </node>
+                        <node concept="2yIwOk" id="6ZBb7lbrpDA" role="2OqNvi" />
+                      </node>
+                      <node concept="2Zo12i" id="6ZBb7lbrpDB" role="2OqNvi">
+                        <node concept="chp4Y" id="6ZBb7lbrpDC" role="2Zo12j">
+                          <ref role="cht4Q" to="tpc2:fGPMmym" resolve="CellModel_Component" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                   <node concept="9aQIb" id="7rLNIDEkXCC" role="9aQIa">
