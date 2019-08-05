@@ -1926,19 +1926,36 @@
                               <node concept="3$u5V9" id="2ulVZ9N$Qk0" role="2OqNvi">
                                 <node concept="1bVj0M" id="2ulVZ9N$Qk1" role="23t8la">
                                   <node concept="3clFbS" id="2ulVZ9N$Qk2" role="1bW5cS">
-                                    <node concept="3clFbF" id="2ulVZ9N$Qk3" role="3cqZAp">
-                                      <node concept="2YIFZM" id="4Sg5$EtEr_6" role="3clFbG">
-                                        <ref role="37wK5l" to="6pqh:4Sg5$EtE8Rk" resolve="processEditor" />
-                                        <ref role="1Pybhc" to="6pqh:4M83bTHkcdv" resolve="EditorToTextGenConvertor" />
-                                        <node concept="37vLTw" id="4Sg5$EtErQZ" role="37wK5m">
-                                          <ref role="3cqZAo" node="2ulVZ9N$Qkb" resolve="it" />
+                                    <node concept="3cpWs8" id="7rLNIDEnLPR" role="3cqZAp">
+                                      <node concept="3cpWsn" id="7rLNIDEnLPS" role="3cpWs9">
+                                        <property role="TrG5h" value="editorToTextGenConvertor" />
+                                        <node concept="3uibUv" id="7rLNIDEnMdf" role="1tU5fm">
+                                          <ref role="3uigEE" to="6pqh:7rLNIDElIqb" resolve="EditorToTextGenConvertor" />
                                         </node>
-                                        <node concept="2OqwBi" id="4Sg5$EtEsMJ" role="37wK5m">
-                                          <node concept="37vLTw" id="zkUSVfqgpa" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="zkUSVfpYGn" resolve="userInput" />
+                                        <node concept="2ShNRf" id="7rLNIDEnNuK" role="33vP2m">
+                                          <node concept="HV5vD" id="7rLNIDEo4K3" role="2ShVmc">
+                                            <ref role="HV5vE" to="6pqh:4M83bTHkcdv" resolve="BasicEditorToTextGenConvertor" />
                                           </node>
-                                          <node concept="liA8E" id="4Sg5$EtEvWZ" role="2OqNvi">
-                                            <ref role="37wK5l" to="d2ft:~UserInput.getExtension()" resolve="getExtension" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbF" id="7rLNIDEo5pw" role="3cqZAp">
+                                      <node concept="2OqwBi" id="7rLNIDEo5J3" role="3clFbG">
+                                        <node concept="37vLTw" id="7rLNIDEo5pu" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="7rLNIDEnLPS" resolve="editorToTextGenConvertor" />
+                                        </node>
+                                        <node concept="liA8E" id="7rLNIDEo84x" role="2OqNvi">
+                                          <ref role="37wK5l" to="6pqh:7rLNIDElLZP" resolve="processEditor" />
+                                          <node concept="37vLTw" id="7rLNIDEo8lW" role="37wK5m">
+                                            <ref role="3cqZAo" node="2ulVZ9N$Qkb" resolve="it" />
+                                          </node>
+                                          <node concept="2OqwBi" id="7rLNIDEo9kS" role="37wK5m">
+                                            <node concept="37vLTw" id="7rLNIDEo8X2" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="zkUSVfpYGn" resolve="userInput" />
+                                            </node>
+                                            <node concept="liA8E" id="7rLNIDEoauR" role="2OqNvi">
+                                              <ref role="37wK5l" to="d2ft:~UserInput.getExtension()" resolve="getExtension" />
+                                            </node>
                                           </node>
                                         </node>
                                       </node>
