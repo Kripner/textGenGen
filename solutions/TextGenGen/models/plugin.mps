@@ -307,6 +307,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
@@ -1912,37 +1915,51 @@
                           </node>
                         </node>
                         <node concept="3clFbH" id="zkUSVfpInc" role="3cqZAp" />
+                        <node concept="3cpWs8" id="5uZgeJQLWkT" role="3cqZAp">
+                          <node concept="3cpWsn" id="5uZgeJQLWkU" role="3cpWs9">
+                            <property role="TrG5h" value="editors" />
+                            <node concept="2I9FWS" id="5uZgeJQLWkS" role="1tU5fm">
+                              <ref role="2I9WkF" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
+                            </node>
+                            <node concept="2OqwBi" id="5uZgeJQLRms" role="33vP2m">
+                              <node concept="37vLTw" id="5uZgeJQLQT9" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2ulVZ9N$Qj7" resolve="editorModel" />
+                              </node>
+                              <node concept="2RRcyG" id="5uZgeJQLV73" role="2OqNvi">
+                                <ref role="2RRcyH" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWs8" id="5uZgeJQRvZ3" role="3cqZAp">
+                          <node concept="3cpWsn" id="5uZgeJQRvZ4" role="3cpWs9">
+                            <property role="TrG5h" value="editorToTextGenConvertor" />
+                            <node concept="3uibUv" id="5uZgeJQRvZ5" role="1tU5fm">
+                              <ref role="3uigEE" to="6pqh:7rLNIDElIqb" resolve="EditorToTextGenConvertor" />
+                            </node>
+                            <node concept="2ShNRf" id="5uZgeJQRwUT" role="33vP2m">
+                              <node concept="1pGfFk" id="5uZgeJQRxHj" role="2ShVmc">
+                                <ref role="37wK5l" to="6pqh:5uZgeJQPUhT" resolve="BasicEditorToTextGenConvertor" />
+                                <node concept="37vLTw" id="5uZgeJQRy1t" role="37wK5m">
+                                  <ref role="3cqZAo" node="5uZgeJQLWkU" resolve="editors" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3clFbF" id="2ulVZ9N$QjU" role="3cqZAp">
                           <node concept="2OqwBi" id="2ulVZ9N$QjV" role="3clFbG">
                             <node concept="2OqwBi" id="2ulVZ9N$QjW" role="2Oq$k0">
-                              <node concept="2OqwBi" id="2ulVZ9N$QjX" role="2Oq$k0">
-                                <node concept="37vLTw" id="2ulVZ9N$QjY" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="2ulVZ9N$Qj7" resolve="editorModel" />
-                                </node>
-                                <node concept="2RRcyG" id="2ulVZ9N$QjZ" role="2OqNvi">
-                                  <ref role="2RRcyH" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
-                                </node>
+                              <node concept="37vLTw" id="5uZgeJQLXV4" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5uZgeJQLWkU" resolve="editors" />
                               </node>
                               <node concept="3$u5V9" id="2ulVZ9N$Qk0" role="2OqNvi">
                                 <node concept="1bVj0M" id="2ulVZ9N$Qk1" role="23t8la">
                                   <node concept="3clFbS" id="2ulVZ9N$Qk2" role="1bW5cS">
-                                    <node concept="3cpWs8" id="7rLNIDEnLPR" role="3cqZAp">
-                                      <node concept="3cpWsn" id="7rLNIDEnLPS" role="3cpWs9">
-                                        <property role="TrG5h" value="editorToTextGenConvertor" />
-                                        <node concept="3uibUv" id="7rLNIDEnMdf" role="1tU5fm">
-                                          <ref role="3uigEE" to="6pqh:7rLNIDElIqb" resolve="EditorToTextGenConvertor" />
-                                        </node>
-                                        <node concept="2ShNRf" id="7rLNIDEnNuK" role="33vP2m">
-                                          <node concept="HV5vD" id="7rLNIDEo4K3" role="2ShVmc">
-                                            <ref role="HV5vE" to="6pqh:4M83bTHkcdv" resolve="BasicEditorToTextGenConvertor" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
                                     <node concept="3clFbF" id="7rLNIDEo5pw" role="3cqZAp">
                                       <node concept="2OqwBi" id="7rLNIDEo5J3" role="3clFbG">
-                                        <node concept="37vLTw" id="7rLNIDEo5pu" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="7rLNIDEnLPS" resolve="editorToTextGenConvertor" />
+                                        <node concept="37vLTw" id="5uZgeJQRyXQ" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="5uZgeJQRvZ4" resolve="editorToTextGenConvertor" />
                                         </node>
                                         <node concept="liA8E" id="7rLNIDEo84x" role="2OqNvi">
                                           <ref role="37wK5l" to="6pqh:7rLNIDElLZP" resolve="processEditor" />

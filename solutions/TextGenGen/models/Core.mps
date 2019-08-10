@@ -252,6 +252,7 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
       <concept id="6832197706140518107" name="jetbrains.mps.baseLanguage.javadoc.structure.DocTypeParameterReference" flags="ng" index="zr_56" />
       <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
         <reference id="6832197706140518108" name="param" index="zr_51" />
@@ -415,6 +416,7 @@
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
+      <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
@@ -1337,6 +1339,45 @@
   <node concept="312cEu" id="4M83bTHkcdv">
     <property role="TrG5h" value="BasicEditorToTextGenConvertor" />
     <property role="3GE5qa" value="" />
+    <node concept="3clFbW" id="5uZgeJQPUhT" role="jymVt">
+      <node concept="37vLTG" id="5uZgeJQPUr3" role="3clF46">
+        <property role="TrG5h" value="allEditors" />
+        <node concept="2I9FWS" id="5uZgeJQPUr4" role="1tU5fm">
+          <ref role="2I9WkF" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5uZgeJQPUhV" role="3clF45" />
+      <node concept="3Tm1VV" id="5uZgeJQPUhW" role="1B3o_S" />
+      <node concept="3clFbS" id="5uZgeJQPUhX" role="3clF47">
+        <node concept="3clFbF" id="5uZgeJQPWp0" role="3cqZAp">
+          <node concept="37vLTI" id="5uZgeJQQc8K" role="3clFbG">
+            <node concept="37vLTw" id="5uZgeJQQcDM" role="37vLTx">
+              <ref role="3cqZAo" node="5uZgeJQPUr3" resolve="allEditors" />
+            </node>
+            <node concept="2OqwBi" id="5uZgeJQPWvo" role="37vLTJ">
+              <node concept="Xjq3P" id="5uZgeJQPWoZ" role="2Oq$k0" />
+              <node concept="2OwXpG" id="5uZgeJQPWSu" role="2OqNvi">
+                <ref role="2Oxat5" node="5uZgeJQPVyF" resolve="allEditors" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="5uZgeJQPW72" role="lGtFl">
+        <node concept="TUZQ0" id="5uZgeJQPWm2" role="3nqlJM">
+          <property role="TUZQ4" value="All editors that will occur in the processed editors (including recursive occurance)." />
+          <node concept="zr_55" id="5uZgeJQPWmg" role="zr_5Q">
+            <ref role="zr_51" node="5uZgeJQPUr3" resolve="allEditors" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5uZgeJQPWmG" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQPWmH" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructs an initialized BasicEditorToTextGenConvertor." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5uZgeJQPU90" role="jymVt" />
     <node concept="3clFb_" id="7rLNIDElMiG" role="jymVt">
       <property role="TrG5h" value="processEditor" />
       <node concept="3clFbS" id="7rLNIDElMiI" role="3clF47">
@@ -1422,8 +1463,11 @@
                   <ref role="3uigEE" node="7rLNIDEkvPh" resolve="EditorCellToTextGenConvertor" />
                 </node>
                 <node concept="2ShNRf" id="7rLNIDElN97" role="33vP2m">
-                  <node concept="HV5vD" id="7rLNIDElOfj" role="2ShVmc">
-                    <ref role="HV5vE" node="7rLNIDEkLTu" resolve="BasicEditorCellToTextGenConvertor" />
+                  <node concept="1pGfFk" id="5uZgeJQQnyL" role="2ShVmc">
+                    <ref role="37wK5l" node="5uZgeJQQhEy" resolve="BasicEditorCellToTextGenConvertor" />
+                    <node concept="37vLTw" id="5uZgeJQQRzF" role="37wK5m">
+                      <ref role="3cqZAo" node="5uZgeJQPVyF" resolve="allEditors" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1523,6 +1567,26 @@
       <node concept="3Tm1VV" id="7rLNIDElMjJ" role="1B3o_S" />
       <node concept="2AHcQZ" id="7rLNIDElMzR" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5uZgeJQPUxf" role="jymVt" />
+    <node concept="2tJIrI" id="5uZgeJQPU$5" role="jymVt" />
+    <node concept="2tJIrI" id="5uZgeJQPUHa" role="jymVt" />
+    <node concept="2tJIrI" id="5uZgeJQPUQh" role="jymVt" />
+    <node concept="2tJIrI" id="5uZgeJQPUTd" role="jymVt" />
+    <node concept="2tJIrI" id="5uZgeJQPV2o" role="jymVt" />
+    <node concept="312cEg" id="5uZgeJQPVyF" role="jymVt">
+      <property role="TrG5h" value="allEditors" />
+      <node concept="3Tm6S6" id="5uZgeJQPVyG" role="1B3o_S" />
+      <node concept="2I9FWS" id="5uZgeJQPVGR" role="1tU5fm">
+        <ref role="2I9WkF" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
+      </node>
+      <node concept="z59LJ" id="5uZgeJQPVRn" role="lGtFl">
+        <node concept="TZ5HA" id="5uZgeJQPVRo" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQPVRp" role="1dT_Ay">
+            <property role="1dT_AB" value="All editors that will occur in the processed editors (including recursive occurance)." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="4M83bTHkcdw" role="1B3o_S" />
@@ -2897,6 +2961,20 @@
     <node concept="2YIFZL" id="4s_An_Z7NeA" role="jymVt">
       <property role="TrG5h" value="getBooleanConstantStyleValue" />
       <node concept="3clFbS" id="4s_An_Z7NeB" role="3clF47">
+        <node concept="3clFbJ" id="2y5ePLC3lIa" role="3cqZAp">
+          <node concept="3clFbS" id="2y5ePLC3lIc" role="3clFbx">
+            <node concept="3cpWs6" id="2y5ePLC3mnP" role="3cqZAp">
+              <node concept="3clFbT" id="2y5ePLC3mzA" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="2y5ePLC3mgW" role="3clFbw">
+            <node concept="10Nm6u" id="2y5ePLC3mlK" role="3uHU7w" />
+            <node concept="37vLTw" id="2y5ePLC3lWO" role="3uHU7B">
+              <ref role="3cqZAo" node="4s_An_Z7Nff" resolve="styleContainer" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2y5ePLC3loh" role="3cqZAp" />
         <node concept="3cpWs8" id="4s_An_Z7NeC" role="3cqZAp">
           <node concept="3cpWsn" id="4s_An_Z7NeD" role="3cpWs9">
             <property role="TrG5h" value="styleValue" />
@@ -8536,6 +8614,21 @@
             <property role="1dT_AB" value="Adds a TextGen segment corresponding to the given Editor cell to the given TextGenBuilder." />
           </node>
         </node>
+        <node concept="TZ5HA" id="5uZgeJQM3YN" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQM3YO" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5uZgeJQM3Yr" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQM3Ys" role="1dT_Ay">
+            <property role="1dT_AB" value="Sometimes it is necessary to look at another editor when processing an editor cell - thus the &quot;allEditors&quot;" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5uZgeJQM40F" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQM40G" role="1dT_Ay">
+            <property role="1dT_AB" value="parameter of a list of all editors." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7rLNIDEkAOK" role="jymVt" />
@@ -8560,6 +8653,21 @@
         <node concept="TZ5HA" id="7rLNIDEkLic" role="TZ5H$">
           <node concept="1dT_AC" id="7rLNIDEkLid" role="1dT_Ay">
             <property role="1dT_AB" value="Adds a TextGen segment corresponding to the given Editor cell collection to the given TextGenBuilder." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5uZgeJQM3ZN" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQM3ZO" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5uZgeJQM41z" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQM41$" role="1dT_Ay">
+            <property role="1dT_AB" value="Sometimes it is necessary to look at another editor when processing an editor cell - thus the &quot;allEditors&quot;" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5uZgeJQM41_" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQM41A" role="1dT_Ay">
+            <property role="1dT_AB" value="parameter of a list of all editors." />
           </node>
         </node>
       </node>
@@ -8591,6 +8699,45 @@
   <node concept="312cEu" id="7rLNIDEkLTu">
     <property role="TrG5h" value="BasicEditorCellToTextGenConvertor" />
     <property role="3GE5qa" value="editorCellToTextGenConvertor" />
+    <node concept="3clFbW" id="5uZgeJQQhEy" role="jymVt">
+      <node concept="37vLTG" id="5uZgeJQQzEo" role="3clF46">
+        <property role="TrG5h" value="allEditors" />
+        <node concept="2I9FWS" id="5uZgeJQQzEp" role="1tU5fm">
+          <ref role="2I9WkF" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5uZgeJQQhE$" role="3clF45" />
+      <node concept="3Tm1VV" id="5uZgeJQQhE_" role="1B3o_S" />
+      <node concept="3clFbS" id="5uZgeJQQhEA" role="3clF47">
+        <node concept="3clFbF" id="5uZgeJQQAcR" role="3cqZAp">
+          <node concept="37vLTI" id="5uZgeJQQAcT" role="3clFbG">
+            <node concept="37vLTw" id="5uZgeJQQAcU" role="37vLTx">
+              <ref role="3cqZAo" node="5uZgeJQQzEo" resolve="allEditors" />
+            </node>
+            <node concept="2OqwBi" id="5uZgeJQQAcV" role="37vLTJ">
+              <node concept="Xjq3P" id="5uZgeJQQAcW" role="2Oq$k0" />
+              <node concept="2OwXpG" id="5uZgeJQQKGI" role="2OqNvi">
+                <ref role="2Oxat5" node="5uZgeJQQEd2" resolve="allEditors" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="5uZgeJQQrQW" role="lGtFl">
+        <node concept="TZ5HA" id="5uZgeJQQrQX" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQQrQY" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructs an initialized BasicEditorToTextGenConvertor." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="5uZgeJQQv53" role="3nqlJM">
+          <property role="TUZQ4" value="All editors that will occur in the processed editor cells (including recursive occurance)." />
+          <node concept="zr_55" id="5uZgeJQQ$7X" role="zr_5Q">
+            <ref role="zr_51" node="5uZgeJQQzEo" resolve="allEditors" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5uZgeJQQeTe" role="jymVt" />
     <node concept="3clFb_" id="7rLNIDEldko" role="jymVt">
       <property role="TrG5h" value="processEditorCell" />
       <node concept="3clFbS" id="7rLNIDEldkq" role="3clF47">
@@ -9704,6 +9851,201 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="5h$fnfu$BAf" role="3cqZAp" />
+            <node concept="3SKdUt" id="5h$fnfu$CsP" role="3cqZAp">
+              <node concept="3SKdUq" id="5h$fnfu$CsQ" role="3SKWNk">
+                <property role="3SKdUp" value="If the next sibling is a ref node list get also styling of the first node of that list" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5h$fnfu$CsR" role="3cqZAp">
+              <node concept="3cpWsn" id="5h$fnfu$CsS" role="3cpWs9">
+                <property role="TrG5h" value="isNextSiblingRefNodeList" />
+                <node concept="10P_77" id="5h$fnfu$CsT" role="1tU5fm" />
+                <node concept="3clFbT" id="5h$fnfu$CsU" role="33vP2m" />
+              </node>
+            </node>
+            <node concept="3cpWs8" id="5h$fnfu$CsV" role="3cqZAp">
+              <node concept="3cpWsn" id="5h$fnfu$CsW" role="3cpWs9">
+                <property role="TrG5h" value="nextSiblingFirstRefNodeListElementStyle" />
+                <node concept="3uibUv" id="5h$fnfu$CsX" role="1tU5fm">
+                  <ref role="3uigEE" node="2G_6976bDNN" resolve="CustomStyleContainer" />
+                </node>
+                <node concept="10Nm6u" id="5h$fnfu$CsY" role="33vP2m" />
+              </node>
+            </node>
+            <node concept="3clFbJ" id="5h$fnfu$CsZ" role="3cqZAp">
+              <node concept="3clFbS" id="5h$fnfu$Ct0" role="3clFbx">
+                <node concept="3clFbF" id="5h$fnfu$Ct9" role="3cqZAp">
+                  <node concept="37vLTI" id="5h$fnfu$Cta" role="3clFbG">
+                    <node concept="37vLTw" id="5h$fnfu$Ctg" role="37vLTJ">
+                      <ref role="3cqZAo" node="5h$fnfu$CsS" resolve="isNextSiblingRefNodeList" />
+                    </node>
+                    <node concept="3clFbT" id="5uZgeJQMsAk" role="37vLTx">
+                      <property role="3clFbU" value="true" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="5h$fnfu$Ct1" role="3cqZAp">
+                  <node concept="3cpWsn" id="5h$fnfu$Ct2" role="3cpWs9">
+                    <property role="TrG5h" value="nextSiblingRefNodeList" />
+                    <node concept="3Tqbb2" id="5h$fnfu$Ct3" role="1tU5fm">
+                      <ref role="ehGHo" to="tpc2:fBF2Hee" resolve="CellModel_RefNodeList" />
+                    </node>
+                    <node concept="10QFUN" id="5h$fnfu$Ct4" role="33vP2m">
+                      <node concept="2OqwBi" id="5h$fnfu$Ct5" role="10QFUP">
+                        <node concept="37vLTw" id="5h$fnfu$Ct6" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7rLNIDEsqVC" resolve="node" />
+                        </node>
+                        <node concept="YCak7" id="5h$fnfu$Ct7" role="2OqNvi" />
+                      </node>
+                      <node concept="3Tqbb2" id="5h$fnfu$Ct8" role="10QFUM">
+                        <ref role="ehGHo" to="tpc2:fBF2Hee" resolve="CellModel_RefNodeList" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="5uZgeJQNCWL" role="3cqZAp">
+                  <node concept="3cpWsn" id="5uZgeJQNCWM" role="3cpWs9">
+                    <property role="TrG5h" value="nextSiblingRefNodeListEditor" />
+                    <node concept="3Tqbb2" id="5uZgeJQNCWK" role="1tU5fm">
+                      <ref role="ehGHo" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
+                    </node>
+                    <node concept="2OqwBi" id="5uZgeJQMwjA" role="33vP2m">
+                      <node concept="37vLTw" id="5uZgeJQR920" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5uZgeJQQEd2" resolve="allEditors" />
+                      </node>
+                      <node concept="1z4cxt" id="5uZgeJQMyZa" role="2OqNvi">
+                        <node concept="1bVj0M" id="5uZgeJQMyZc" role="23t8la">
+                          <node concept="3clFbS" id="5uZgeJQMyZd" role="1bW5cS">
+                            <node concept="3clFbF" id="2y5ePLCdvnj" role="3cqZAp">
+                              <node concept="3clFbC" id="2y5ePLCey4M" role="3clFbG">
+                                <node concept="2OqwBi" id="2y5ePLCdw4M" role="3uHU7B">
+                                  <node concept="37vLTw" id="2y5ePLCdvng" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="5uZgeJQMyZe" resolve="it" />
+                                  </node>
+                                  <node concept="3TrEf2" id="2y5ePLCdwXz" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="tpc2:gXXX56I" resolve="conceptDeclaration" />
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="2y5ePLCeyN2" role="3uHU7w">
+                                  <node concept="2OqwBi" id="2y5ePLCeyN3" role="2Oq$k0">
+                                    <node concept="37vLTw" id="2y5ePLCeyN4" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="5h$fnfu$Ct2" resolve="nextSiblingRefNodeList" />
+                                    </node>
+                                    <node concept="3TrEf2" id="2y5ePLCeyN5" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="tpc2:fBF2Hej" resolve="linkDeclaration" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrEf2" id="2y5ePLCeyN6" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="tpce:fA0lvVK" resolve="target" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Rh6nW" id="5uZgeJQMyZe" role="1bW2Oz">
+                            <property role="TrG5h" value="it" />
+                            <node concept="2jxLKc" id="5uZgeJQMyZf" role="1tU5fm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="5uZgeJQNFiI" role="3cqZAp">
+                  <node concept="3cpWsn" id="5uZgeJQNFiJ" role="3cpWs9">
+                    <property role="TrG5h" value="nextSiblingFirstRefNodeListElement" />
+                    <node concept="3Tqbb2" id="5uZgeJQNFiH" role="1tU5fm">
+                      <ref role="ehGHo" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+                    </node>
+                    <node concept="2OqwBi" id="5uZgeJQNEbT" role="33vP2m">
+                      <node concept="37vLTw" id="5uZgeJQNDUD" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5uZgeJQNCWM" resolve="nextSiblingRefNodeListEditor" />
+                      </node>
+                      <node concept="3TrEf2" id="5uZgeJQNEtS" role="2OqNvi">
+                        <ref role="3Tt5mk" to="tpc2:fIwV5gl" resolve="cellModel" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Jncv_" id="5uZgeJQOeBK" role="3cqZAp">
+                  <ref role="JncvD" to="tpc2:fBEZMkn" resolve="CellModel_Collection" />
+                  <node concept="37vLTw" id="5uZgeJQOeMm" role="JncvB">
+                    <ref role="3cqZAo" node="5uZgeJQNFiJ" resolve="nextSiblingFirstRefNodeListElement" />
+                  </node>
+                  <node concept="3clFbS" id="5uZgeJQOeBU" role="Jncv$">
+                    <node concept="3clFbF" id="5uZgeJQOf5J" role="3cqZAp">
+                      <node concept="37vLTI" id="5uZgeJQOUx$" role="3clFbG">
+                        <node concept="37vLTw" id="5uZgeJQOUFE" role="37vLTJ">
+                          <ref role="3cqZAo" node="5uZgeJQNFiJ" resolve="nextSiblingFirstRefNodeListElement" />
+                        </node>
+                        <node concept="2OqwBi" id="5uZgeJQOC49" role="37vLTx">
+                          <node concept="2OqwBi" id="5uZgeJQOffq" role="2Oq$k0">
+                            <node concept="Jnkvi" id="5uZgeJQOf5I" role="2Oq$k0">
+                              <ref role="1M0zk5" node="5uZgeJQOeBZ" resolve="nextSiblingRefNodeListEditorCollection" />
+                            </node>
+                            <node concept="3Tsc0h" id="5uZgeJQOr_7" role="2OqNvi">
+                              <ref role="3TtcxE" to="tpc2:fBEZMko" resolve="childCellModel" />
+                            </node>
+                          </node>
+                          <node concept="1uHKPH" id="5uZgeJQOUiB" role="2OqNvi" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="JncvC" id="5uZgeJQOeBZ" role="JncvA">
+                    <property role="TrG5h" value="nextSiblingRefNodeListEditorCollection" />
+                    <node concept="2jxLKc" id="5uZgeJQOeC0" role="1tU5fm" />
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="5uZgeJQOUUt" role="3cqZAp">
+                  <node concept="3clFbS" id="5uZgeJQOUUu" role="3clFbx">
+                    <node concept="3clFbF" id="5uZgeJQOUUv" role="3cqZAp">
+                      <node concept="37vLTI" id="5uZgeJQOUUw" role="3clFbG">
+                        <node concept="37vLTw" id="5uZgeJQOYLY" role="37vLTJ">
+                          <ref role="3cqZAo" node="5h$fnfu$CsW" resolve="nextSiblingFirstRefNodeListElementStyle" />
+                        </node>
+                        <node concept="2ShNRf" id="5uZgeJQOUUy" role="37vLTx">
+                          <node concept="1pGfFk" id="5uZgeJQOUUz" role="2ShVmc">
+                            <ref role="37wK5l" node="2G_6976bDXb" resolve="CustomStyleContainer" />
+                            <node concept="1PxgMI" id="5uZgeJQOUU$" role="37wK5m">
+                              <node concept="chp4Y" id="5uZgeJQOUU_" role="3oSUPX">
+                                <ref role="cht4Q" to="tpc2:hJF0Tl2" resolve="IStyleContainer" />
+                              </node>
+                              <node concept="37vLTw" id="5uZgeJQOYu8" role="1m5AlR">
+                                <ref role="3cqZAo" node="5uZgeJQNFiJ" resolve="nextSiblingFirstRefNodeListElement" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3y3z36" id="5uZgeJQOYl8" role="3clFbw">
+                    <node concept="10Nm6u" id="5uZgeJQOYr0" role="3uHU7w" />
+                    <node concept="37vLTw" id="5uZgeJQOVsL" role="3uHU7B">
+                      <ref role="3cqZAo" node="5uZgeJQNFiJ" resolve="nextSiblingFirstRefNodeListElement" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5h$fnfu$Ctw" role="3clFbw">
+                <node concept="2OqwBi" id="5h$fnfu$Ctx" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5h$fnfu$Cty" role="2Oq$k0">
+                    <node concept="37vLTw" id="5h$fnfu$Ctz" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7rLNIDEsqVC" resolve="node" />
+                    </node>
+                    <node concept="YCak7" id="5h$fnfu$Ct$" role="2OqNvi" />
+                  </node>
+                  <node concept="2yIwOk" id="5h$fnfu$Ct_" role="2OqNvi" />
+                </node>
+                <node concept="2Zo12i" id="5h$fnfu$CtA" role="2OqNvi">
+                  <node concept="chp4Y" id="5h$fnfu$EJ7" role="2Zo12j">
+                    <ref role="cht4Q" to="tpc2:fBF2Hee" resolve="CellModel_RefNodeList" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="7rLNIDEr5pd" role="3cqZAp" />
             <node concept="3SKdUt" id="7rLNIDEs5VR" role="3cqZAp">
               <node concept="3SKdUq" id="7rLNIDEs5VT" role="3SKWNk">
@@ -9716,18 +10058,35 @@
                 <node concept="10P_77" id="7rLNIDEkXBa" role="1tU5fm" />
                 <node concept="22lmx$" id="6ZBb7lbsbLH" role="33vP2m">
                   <node concept="1eOMI4" id="6ZBb7lbsbYf" role="3uHU7w">
-                    <node concept="1Wc70l" id="6ZBb7lbscxu" role="1eOMHV">
-                      <node concept="37vLTw" id="6ZBb7lbsc6_" role="3uHU7B">
-                        <ref role="3cqZAo" node="6ZBb7lbrqJi" resolve="isNextSiblingNonEmptyCollection" />
-                      </node>
-                      <node concept="2YIFZM" id="6ZBb7lbscDB" role="3uHU7w">
-                        <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
-                        <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
-                        <node concept="37vLTw" id="6ZBb7lbscO8" role="37wK5m">
-                          <ref role="3cqZAo" node="6ZBb7lbrqJm" resolve="nextSiblingFirstCollectionElementStyle" />
+                    <node concept="22lmx$" id="5uZgeJQOZaP" role="1eOMHV">
+                      <node concept="1Wc70l" id="6ZBb7lbscxu" role="3uHU7B">
+                        <node concept="37vLTw" id="6ZBb7lbsc6_" role="3uHU7B">
+                          <ref role="3cqZAo" node="6ZBb7lbrqJi" resolve="isNextSiblingNonEmptyCollection" />
                         </node>
-                        <node concept="35c_gC" id="6ZBb7lbscDD" role="37wK5m">
-                          <ref role="35c_gD" to="tpc2:i0pVoAY" resolve="IndentLayoutOnNewLineStyleClassItem" />
+                        <node concept="2YIFZM" id="6ZBb7lbscDB" role="3uHU7w">
+                          <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
+                          <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                          <node concept="37vLTw" id="6ZBb7lbscO8" role="37wK5m">
+                            <ref role="3cqZAo" node="6ZBb7lbrqJm" resolve="nextSiblingFirstCollectionElementStyle" />
+                          </node>
+                          <node concept="35c_gC" id="6ZBb7lbscDD" role="37wK5m">
+                            <ref role="35c_gD" to="tpc2:i0pVoAY" resolve="IndentLayoutOnNewLineStyleClassItem" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1Wc70l" id="5uZgeJQOZvD" role="3uHU7w">
+                        <node concept="37vLTw" id="5uZgeJQOZRy" role="3uHU7B">
+                          <ref role="3cqZAo" node="5h$fnfu$CsS" resolve="isNextSiblingRefNodeList" />
+                        </node>
+                        <node concept="2YIFZM" id="5uZgeJQOZvF" role="3uHU7w">
+                          <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                          <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
+                          <node concept="37vLTw" id="5uZgeJQP0dB" role="37wK5m">
+                            <ref role="3cqZAo" node="5h$fnfu$CsW" resolve="nextSiblingFirstRefNodeListElementStyle" />
+                          </node>
+                          <node concept="35c_gC" id="5uZgeJQOZvH" role="37wK5m">
+                            <ref role="35c_gD" to="tpc2:i0pVoAY" resolve="IndentLayoutOnNewLineStyleClassItem" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -9823,18 +10182,35 @@
                     </node>
                   </node>
                   <node concept="1eOMI4" id="6ZBb7lbsdnz" role="3uHU7w">
-                    <node concept="1Wc70l" id="6ZBb7lbsdn$" role="1eOMHV">
-                      <node concept="37vLTw" id="6ZBb7lbsdn_" role="3uHU7B">
-                        <ref role="3cqZAo" node="6ZBb7lbrqJi" resolve="isNextSiblingNonEmptyCollection" />
-                      </node>
-                      <node concept="2YIFZM" id="6ZBb7lbsdnA" role="3uHU7w">
-                        <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
-                        <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
-                        <node concept="37vLTw" id="6ZBb7lbsdnB" role="37wK5m">
-                          <ref role="3cqZAo" node="6ZBb7lbrqJm" resolve="nextSiblingFirstCollectionElementStyle" />
+                    <node concept="22lmx$" id="5uZgeJQP0Ip" role="1eOMHV">
+                      <node concept="1Wc70l" id="6ZBb7lbsdn$" role="3uHU7B">
+                        <node concept="37vLTw" id="6ZBb7lbsdn_" role="3uHU7B">
+                          <ref role="3cqZAo" node="6ZBb7lbrqJi" resolve="isNextSiblingNonEmptyCollection" />
                         </node>
-                        <node concept="35c_gC" id="6ZBb7lbsdnC" role="37wK5m">
-                          <ref role="35c_gD" to="tpc2:hX1L4JR" resolve="PunctuationLeftStyleClassItem" />
+                        <node concept="2YIFZM" id="6ZBb7lbsdnA" role="3uHU7w">
+                          <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
+                          <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                          <node concept="37vLTw" id="6ZBb7lbsdnB" role="37wK5m">
+                            <ref role="3cqZAo" node="6ZBb7lbrqJm" resolve="nextSiblingFirstCollectionElementStyle" />
+                          </node>
+                          <node concept="35c_gC" id="6ZBb7lbsdnC" role="37wK5m">
+                            <ref role="35c_gD" to="tpc2:hX1L4JR" resolve="PunctuationLeftStyleClassItem" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1Wc70l" id="5uZgeJQP13v" role="3uHU7w">
+                        <node concept="37vLTw" id="5uZgeJQP13w" role="3uHU7B">
+                          <ref role="3cqZAo" node="5h$fnfu$CsS" resolve="isNextSiblingRefNodeList" />
+                        </node>
+                        <node concept="2YIFZM" id="5uZgeJQP13x" role="3uHU7w">
+                          <ref role="1Pybhc" node="1EE3zMzqFQO" resolve="Utils" />
+                          <ref role="37wK5l" node="4s_An_Z7NeA" resolve="getBooleanConstantStyleValue" />
+                          <node concept="37vLTw" id="5uZgeJQP13y" role="37wK5m">
+                            <ref role="3cqZAo" node="5h$fnfu$CsW" resolve="nextSiblingFirstRefNodeListElementStyle" />
+                          </node>
+                          <node concept="35c_gC" id="5uZgeJQP13z" role="37wK5m">
+                            <ref role="35c_gD" to="tpc2:hX1L4JR" resolve="PunctuationLeftStyleClassItem" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -10118,6 +10494,26 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5uZgeJQQByJ" role="jymVt" />
+    <node concept="2tJIrI" id="5uZgeJQQBUY" role="jymVt" />
+    <node concept="2tJIrI" id="5uZgeJQQCjf" role="jymVt" />
+    <node concept="2tJIrI" id="5uZgeJQQCFy" role="jymVt" />
+    <node concept="2tJIrI" id="5uZgeJQQD3R" role="jymVt" />
+    <node concept="2tJIrI" id="5uZgeJQQDse" role="jymVt" />
+    <node concept="312cEg" id="5uZgeJQQEd2" role="jymVt">
+      <property role="TrG5h" value="allEditors" />
+      <node concept="3Tm6S6" id="5uZgeJQQEd3" role="1B3o_S" />
+      <node concept="2I9FWS" id="5uZgeJQQEd4" role="1tU5fm">
+        <ref role="2I9WkF" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
+      </node>
+      <node concept="z59LJ" id="5uZgeJQQEd5" role="lGtFl">
+        <node concept="TZ5HA" id="5uZgeJQQEd6" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQQEd7" role="1dT_Ay">
+            <property role="1dT_AB" value="All editors that will occur in the processed editor cells (including recursive occurance)." />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="7rLNIDEkLTv" role="1B3o_S" />
     <node concept="3UR2Jj" id="7rLNIDEkN$h" role="lGtFl">
       <node concept="TZ5HA" id="7rLNIDEkN$i" role="TZ5H$">
@@ -10169,6 +10565,21 @@
         <node concept="TZ5HA" id="7rLNIDElM9o" role="TZ5H$">
           <node concept="1dT_AC" id="7rLNIDElM9p" role="1dT_Ay">
             <property role="1dT_AB" value="file extension. Otherwise the file extension argument is ignored." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5uZgeJQM0vd" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQM0ve" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5uZgeJQM4RA" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQM4RB" role="1dT_Ay">
+            <property role="1dT_AB" value="Sometimes it is necessary to look at another editor when processing a given editor - thus the &quot;allEditors&quot;" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5uZgeJQM4RC" role="TZ5H$">
+          <node concept="1dT_AC" id="5uZgeJQM4RD" role="1dT_Ay">
+            <property role="1dT_AB" value="parameter of a list of all editors." />
           </node>
         </node>
       </node>
