@@ -13,6 +13,10 @@ should appear in the context menu after right clicking on any module:
 
 ## Release log
 
+Changes brought by **version 1.1**, 11/2019:
+- Implementation of enumeration support
+- Refactoring of deprecated parts
+
 Major changes brought by **version 1.0**, 9/2019:
 - Generation of TextGen removes the previously generated TextGen and does not ask for a prefix anymore
 - Newly supported aspects of the Editor (so that the generated TextGen respects them):
