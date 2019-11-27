@@ -11,6 +11,10 @@ from there.
 However, if you want to make any modification to the plugin, you could find useful these guides:
 
 **To build the plugin:**
+- Define the `TEXTGENGEN_HOME` path variable
+    - Go to `File` > `Settings` > `Apppereance & Behavior` > `Path Variables`
+    - Add a new variable with the name `TEXTGENGEN_HOME` and the value of the path to the top-most
+    directory of the *TextGenGen* project (e.g. `C:\Users\yourName\MPSProjects\textGenGen`)
 - Open the *TextGenGen* project in MPS
 - Expand the `TextGeGEn.build` item in the project explorer
 - Right-click the `TextGenGen` item with a spider icon
