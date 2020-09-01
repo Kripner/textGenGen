@@ -88,13 +88,13 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
-      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="ng" index="1Pa9Pv">
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
         <child id="2535923850359210936" name="lines" index="1PaQFQ" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -218,8 +218,8 @@
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="3bagCubOCot" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="4bm4Hvv3v2s" role="2Ry0An">
-              <property role="2Ry0Am" value="MPS 2020.1" />
+            <node concept="2Ry0Ak" id="2wnL1WJByDm" role="2Ry0An">
+              <property role="2Ry0Am" value="MPS 2020.2" />
             </node>
           </node>
         </node>
@@ -354,13 +354,13 @@
         <node concept="2pNUuL" id="6gVRE4aUuI3" role="2pNNFR">
           <property role="2pNUuO" value="since-build" />
           <node concept="2pMdtt" id="6gVRE4aUuI4" role="2pMdts">
-            <property role="2pMdty" value="201.1" />
+            <property role="2pMdty" value="202.1" />
           </node>
         </node>
         <node concept="2pNUuL" id="47a464IucXc" role="2pNNFR">
           <property role="2pNUuO" value="until-build" />
           <node concept="2pMdtt" id="47a464IucXd" role="2pMdts">
-            <property role="2pMdty" value="202.1" />
+            <property role="2pMdty" value="203.1" />
           </node>
         </node>
       </node>
@@ -371,7 +371,7 @@
       </node>
       <node concept="3_J27D" id="5n$w_eSjdep" role="m$_w8">
         <node concept="3Mxwew" id="5n$w_eSjdeq" role="3MwsjC">
-          <property role="3MwjfP" value="2020.1" />
+          <property role="3MwjfP" value="2020.2" />
         </node>
       </node>
       <node concept="m$f5U" id="5n$w_eSjder" role="m$_yh">
