@@ -2,13 +2,13 @@
 <model ref="r:68996da4-58e0-41be-91df-5a92958b0641(TextGenGen.Core)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
@@ -316,6 +316,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -1112,8 +1113,11 @@
                         <node concept="Xl_RD" id="6zYP05UdWsq" role="3uHU7B">
                           <property role="Xl_RC" value="TextGen cannot reference this object: " />
                         </node>
-                        <node concept="Jnkvi" id="6zYP05UdX1W" role="3uHU7w">
-                          <ref role="1M0zk5" node="6zYP05UdVFa" resolve="parameter" />
+                        <node concept="2OqwBi" id="60c63VRJFkh" role="3uHU7w">
+                          <node concept="Jnkvi" id="6zYP05UdX1W" role="2Oq$k0">
+                            <ref role="1M0zk5" node="6zYP05UdVFa" resolve="parameter" />
+                          </node>
+                          <node concept="2Iv5rx" id="60c63VRJFki" role="2OqNvi" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="7apjQGeMvnT" role="3uHU7w">
