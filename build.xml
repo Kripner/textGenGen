@@ -50,7 +50,7 @@
         <depends>jetbrains.mps.core</depends>
         <description>Editor to TextGen convertor</description>
         <vendor>JetBrains</vendor>
-        <idea-version since-build="212.1" until-build="213.1" />
+        <idea-version since-build="213.1" until-build="221.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -69,7 +69,7 @@
         <depends>jetbrains.mps.core</depends>
         <description>Editor to TextGen convertor</description>
         <vendor>JetBrains</vendor>
-        <idea-version since-build="212.1" until-build="213.1" />
+        <idea-version since-build="213.1" until-build="221.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
