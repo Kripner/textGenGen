@@ -4,8 +4,8 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${TEXTGENGEN_HOME}/java_src/EditorToText_IDEA" type="java_source_stubs">
-      <sourceRoot location="src" />
+    <modelRoot contentPath="/Users/vaclav/work/mps_projects/textGenGen/java_src/EditorToText_IDEA/src" type="java_source_stubs">
+      <sourceRoot location="." />
     </modelRoot>
   </models>
   <facets>
@@ -14,7 +14,7 @@
     </facet>
   </facets>
   <sourcePath>
-    <source path="${TEXTGENGEN_HOME}/java_src/EditorToText_IDEA/src" />
+    <source path="/Users/vaclav/work/mps_projects/textGenGen/java_src/EditorToText_IDEA/src" />
   </sourcePath>
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
