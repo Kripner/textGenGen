@@ -4,17 +4,17 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="/Users/vaclav/work/mps_projects/textGenGen/java_src/EditorToText_IDEA/src" type="java_source_stubs">
+    <modelRoot contentPath="${module}/../../java_src/EditorToText_IDEA/src" type="java_source_stubs">
       <sourceRoot location="." />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
   <sourcePath>
-    <source path="/Users/vaclav/work/mps_projects/textGenGen/java_src/EditorToText_IDEA/src" />
+    <source path="${module}/../../java_src/EditorToText_IDEA/src" />
   </sourcePath>
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
